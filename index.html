@@ -1,113 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadorossa | Profile</title>
+    <title>Archive // Shadorossa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
 
-<div class="wrapper">
-    <header class="profile-box">
-        <img src="img/avatar.jpg" class="avatar-sq" alt="Shadorossa" onerror="this.src='https://via.placeholder.com/200'">
-        <div class="profile-info">
-            <h1>SHADOROSSA</h1>
-            <div class="stats-container">
-                <div>JUEGOS <span id="count-games" class="stat-val">0</span></div>
-                <div>ANIME <span id="count-anime" class="stat-val">0</span></div>
-                <div>MANGA <span id="count-manga" class="stat-val">0</span></div>
-            </div>
-        </div>
-    </header>
-
-    <div class="deco-line"></div>
-
-    <span class="section-tag">Top Selected // Favoritos</span>
-    <section id="favorites-grid" class="fav-grid">
-        </section>
-
-    <div class="deco-line" style="width: 40%;"></div>
-
-    <div class="filter-nav">
-        <button class="filter-btn active" onclick="filter('all', this)">TODO</button>
-        <button class="filter-btn" onclick="filter('game', this)">JUEGOS</button>
-        <button class="filter-btn" onclick="filter('anime', this)">ANIME</button>
-        <button class="filter-btn" onclick="filter('manga', this)">MANGA</button>
-    </div>
-
-    <main id="main-grid" class="general-grid">
-        </main>
-</div>
-
-<script>
-    let db = [];
-
-    async function load() {
-        try {
-            // Cargar datos (Asegúrate de que los archivos existen en data/)
-            const [g, a, m, favs] = await Promise.all([
-                fetch('data/games.json').then(r => r.json()).catch(() => []),
-                fetch('data/anime.json').then(r => r.json()).catch(() => []),
-                fetch('data/manga.json').then(r => r.json()).catch(() => []),
-                fetch('data/favorites.json').then(r => r.json()).catch(() => [])
-            ]);
-
-            // Unificar base de datos
-            db = [
-                ...g.map(i => ({...i, type: 'game'})),
-                ...a.map(i => ({...i, type: 'anime'})),
-                ...m.map(i => ({...i, type: 'manga'}))
-            ];
-
-            // Actualizar contadores
-            document.getElementById('count-games').innerText = g.length;
-            document.getElementById('count-anime').innerText = a.length;
-            document.getElementById('count-manga').innerText = m.length;
-
-            // Renderizar Favoritos (Basado en el orden de favorites.json)
-            const favData = favs.map(title => db.find(item => item.title.toLowerCase() === title.toLowerCase())).filter(Boolean);
-            renderFavs(favData);
-
-            // Renderizar General (Resto ordenado A-Z)
-            const generalData = db.filter(item => !favs.some(ft => ft.toLowerCase() === item.title.toLowerCase()))
-                                  .sort((x, y) => x.title.localeCompare(y.title));
-            renderGeneral(generalData);
-
-        } catch (e) { console.error("Error cargando JSONs", e); }
-    }
-
-    function renderFavs(items) {
-        document.getElementById('favorites-grid').innerHTML = items.map((item, i) => `
-            <div class="fav-card">
-                <div class="rank-tag">#0${i+1}</div>
-                <img src="${item.image}" alt="${item.title}">
-                <div class="fav-info">
-                    <strong>${item.title}</strong><br>
-                    <small style="color:#555">${item.type.toUpperCase()}</small>
+    <div class="wrapper">
+        <header class="profile-box">
+            <img src="img/avatar.png" class="avatar-sq" alt="Profile">
+            <div class="profile-info">
+                <h1>SHADOROSSA</h1>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span id="count-games" class="stat-val">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-tv"></i>
+                        <span id="count-anime" class="stat-val">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span id="count-manga" class="stat-val">0</span>
+                    </div>
                 </div>
             </div>
-        `).join('');
-    }
+        </header>
 
-    function renderGeneral(items) {
-        document.getElementById('main-grid').innerHTML = items.map(item => `
-            <div class="tile" data-type="${item.type}">
-                <img src="${item.image}" title="${item.title}" loading="lazy">
+        <div class="category-divider">
+            <span class="category-label">Shadorossa's Core</span>
+            <div class="line-fragment"></div>
+        </div>
+        <section id="favorites-grid" class="fav-grid"></section>
+
+        <div class="category-divider">
+            <span class="category-label">Obras</span>
+            <div class="line-fragment"></div>
+        </div>
+
+        <div class="controls-row">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" class="search-input" placeholder="Buscar en el archivo..."
+                    oninput="handleSearch(this.value)">
             </div>
+
+            <nav class="filter-nav">
+                <button class="filter-btn active" onclick="setFilter('all', this)">TODO</button>
+                <button class="filter-btn" onclick="setFilter('game', this)">JUEGOS</button>
+                <button class="filter-btn" onclick="setFilter('anime', this)">ANIME</button>
+                <button class="filter-btn" onclick="setFilter('manga', this)">MANGA</button>
+            </nav>
+
+            <div class="sort-group">
+                <select class="sort-select" id="sort-key" onchange="update()">
+                    <option value="title">TÍTULO</option>
+                    <option value="score">NOTA</option>
+                </select>
+                <button class="dir-btn" onclick="toggleDir()" id="dir-btn">
+                    <i class="fa-solid fa-arrow-down-short-wide" id="dir-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <main id="main-grid" class="general-grid"></main>
+    </div>
+
+    <script>
+        let database = [];
+        let filteredList = [];
+        let currentFilter = 'all';
+        let searchQuery = '';
+        let sortAsc = true;
+
+        function formatTitle(title) {
+            let main = title;
+            let sub = "";
+
+            if (title.includes(": ")) {
+                const parts = title.split(": ");
+                main = parts[0];
+                sub = parts.slice(1).join(": ");
+            }
+            else {
+                // Regex mejorado: no corta palabras con guión intermedio
+                const regex = /^(.*?)(\s(?:Season\s\d+|Part\s\d+|Vol\s\d+|\d+(?:st|nd|rd|th)\sSeason))$/i;
+                const match = title.match(regex);
+                if (match) {
+                    main = match[1];
+                    sub = match[2];
+                }
+            }
+
+            return `
+            <span class="main-title">${main.trim()}</span>
+            ${sub ? `<span class="sub-title">${sub.trim()}</span>` : ''}
+        `;
+        }
+
+        async function init() {
+            const fetchJSON = p => fetch(p).then(r => r.ok ? r.json() : []);
+            const [games, anime, manga, favs] = await Promise.all([
+                fetchJSON('data/games.json'), fetchJSON('data/anime.json'),
+                fetchJSON('data/manga.json'), fetchJSON('data/favorites.json')
+            ]);
+
+            database = [
+                ...games.map(i => ({ ...i, type: 'game', score: parseFloat(i.score) || 0 })),
+                ...anime.map(i => ({ ...i, type: 'anime', score: parseFloat(i.score) || 0 })),
+                ...manga.map(i => ({ ...i, type: 'manga', score: parseFloat(i.score) || 0 }))
+            ];
+
+            document.getElementById('count-games').innerText = games.length;
+            document.getElementById('count-anime').innerText = anime.length;
+            document.getElementById('count-manga').innerText = manga.length;
+
+            const favItems = favs.map(t => database.find(i => i.title.toLowerCase() === t.toLowerCase())).filter(Boolean);
+            render(favItems, 'favorites-grid', true);
+
+            filteredList = database.filter(i => !favs.some(f => f.toLowerCase() === i.title.toLowerCase()));
+            update();
+        }
+
+        function render(data, containerId, isFav) {
+            document.getElementById(containerId).innerHTML = data.map((item, i) => `
+            <a href="${item.url || '#'}" target="_blank" class="item-card ${isFav ? 'fav' : 'tile'}">
+                ${isFav ? `<div class="rank-tag">#${(i + 1).toString().padStart(2, '0')}</div>` : ''}
+                <div class="score-hexagon">
+                    <span class="score-val">${item.score > 0 ? item.score : '--'}</span>
+                </div>
+                <img src="${item.image}" alt="${item.title}" loading="lazy">
+                <div class="title-container">
+                    ${formatTitle(item.title)}
+                </div>
+            </a>
         `).join('');
-    }
+        }
 
-    function filter(type, btn) {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const tiles = document.querySelectorAll('.tile');
-        tiles.forEach(t => {
-            t.style.display = (type === 'all' || t.dataset.type === type) ? 'block' : 'none';
-        });
-    }
+        function handleSearch(v) { searchQuery = v.toLowerCase(); update(); }
+        function setFilter(t, b) {
+            document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
+            b.classList.add('active');
+            currentFilter = t; update();
+        }
 
-    window.onload = load;
-</script>
+        function toggleDir() {
+            sortAsc = !sortAsc;
+            const icon = document.getElementById('dir-icon');
+            // Cambiamos el icono según la dirección
+            if (sortAsc) {
+                icon.className = "fa-solid fa-arrow-down-short-wide";
+            } else {
+                icon.className = "fa-solid fa-arrow-up-wide-short";
+            }
+            update();
+        }
+
+        function update() {
+            const key = document.getElementById('sort-key').value;
+            let res = filteredList;
+            if (currentFilter !== 'all') res = res.filter(i => i.type === currentFilter);
+            if (searchQuery) res = res.filter(i => i.title.toLowerCase().includes(searchQuery));
+            res.sort((a, b) => {
+                let valA = a[key], valB = b[key];
+                if (typeof valA === 'string') return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+                return sortAsc ? valA - valB : valB - valA;
+            });
+            render(res, 'main-grid', false);
+        }
+        window.onload = init;
+    </script>
 </body>
+
 </html>

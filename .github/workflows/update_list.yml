@@ -1,31 +1,33 @@
-name: Update Media List
+name: Sincronizar Bibliotecas
 on:
   schedule:
-    - cron: '0 0 * * *' # Se ejecuta cada 24 horas
-  workflow_dispatch: # Permite ejecutarlo manualmente
+    - cron: '0 0 * * *' # Se ejecuta una vez al día a medianoche
+  workflow_dispatch:      # Permite ejecutarlo manualmente con un botón
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout del código
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Install dependencies
+      - name: Instalar dependencias
         run: pip install requests beautifulsoup4
 
-      - name: Run Scraper
-        run: python scripts/update_games.py  # Aquí pones tu script de Backloggd
-
-      - name: Commit and Push
+      - name: Ejecutar Scripts de Datos
         run: |
-          git config --global user.name "Bot-Shadorossa"
+          python scripts/update_anilist.py
+          python scripts/update_games.py
+
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config --global user.name "Shadorossa-Bot"
           git config --global user.email "bot@github.com"
           git add data/*.json
-          git commit -m "Auto-update library" || exit 0
+          git commit -m "Sincronización automática: AniList y Backloggd" || exit 0
           git push

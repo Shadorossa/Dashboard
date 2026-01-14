@@ -1,0 +1,716 @@
+[
+    {
+        "title": "20 Seiki Shounen",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30003-E84fwIh22LAQ.jpg",
+        "type": "manga",
+        "score": 9,
+        "url": "https://anilist.co/manga/30003"
+    },
+    {
+        "title": "Chainsaw Man",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx105778-euxXZEIfDY2u.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/105778"
+    },
+    {
+        "title": "Gintama",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30044-vPmoz3vTPvZs.jpg",
+        "type": "manga",
+        "score": 10,
+        "url": "https://anilist.co/manga/30044"
+    },
+    {
+        "title": "JoJo no Kimyou na Bouken: Stone Ocean",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx33009-jF9dqLJcZC4n.png",
+        "type": "manga",
+        "score": 6,
+        "url": "https://anilist.co/manga/33009"
+    },
+    {
+        "title": "JoJo no Kimyou na Bouken: Steel Ball Run",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31706-lRncu9VbcBB7.png",
+        "type": "manga",
+        "score": 7,
+        "url": "https://anilist.co/manga/31706"
+    },
+    {
+        "title": "Jujutsu Kaisen",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101517-H3TdM3g5ZUe9.jpg",
+        "type": "manga",
+        "score": 1,
+        "url": "https://anilist.co/manga/101517"
+    },
+    {
+        "title": "Nanatsu no Taizai",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx74485-mFbj0sQEcBur.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/74485"
+    },
+    {
+        "title": "Pandora Hearts",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx33031-LzNWgqS69qAj.jpg",
+        "type": "manga",
+        "score": 8,
+        "url": "https://anilist.co/manga/33031"
+    },
+    {
+        "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30022-jxTlViun1o10.jpg",
+        "type": "manga",
+        "score": 6,
+        "url": "https://anilist.co/manga/30022"
+    },
+    {
+        "title": "Shingeki no Kyojin",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx53390-1RsuABC34P9D.jpg",
+        "type": "manga",
+        "score": 4,
+        "url": "https://anilist.co/manga/53390"
+    },
+    {
+        "title": "SLAM DUNK",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30051-5KJyPlO7z5F4.png",
+        "type": "manga",
+        "score": 3,
+        "url": "https://anilist.co/manga/30051"
+    },
+    {
+        "title": "Tokyo Ghoul",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx63327-glC9cDxYBja9.png",
+        "type": "manga",
+        "score": 2,
+        "url": "https://anilist.co/manga/63327"
+    },
+    {
+        "title": "Vagabond",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30656-9mW113O7rDnA.png",
+        "type": "manga",
+        "score": 6,
+        "url": "https://anilist.co/manga/30656"
+    },
+    {
+        "title": "Kakegurui Midari",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx106174-SCjlpyZXFzvJ.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/106174"
+    },
+    {
+        "title": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86635-EdaLQmsn86Fy.png",
+        "type": "manga",
+        "score": 6,
+        "url": "https://anilist.co/manga/86635"
+    },
+    {
+        "title": "21 Seiki Shounen",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx30743-eln5xX7mt8ps.jpg",
+        "type": "manga",
+        "score": 6,
+        "url": "https://anilist.co/manga/30743"
+    },
+    {
+        "title": "Magi: Sinbad no Bouken",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx78025-RrI7jNnJAGnA.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/78025"
+    },
+    {
+        "title": "BLEACH",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30012-1epmVfTSv2rr.png",
+        "type": "manga",
+        "score": 7,
+        "url": "https://anilist.co/manga/30012"
+    },
+    {
+        "title": "Tokyo Ghoul:re",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85611-Asb0BNP23NsJ.png",
+        "type": "manga",
+        "score": 4,
+        "url": "https://anilist.co/manga/85611"
+    },
+    {
+        "title": "Tokyo卍Revengers",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx102988-OoVJxQCH6fbR.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/102988"
+    },
+    {
+        "title": "Haikyuu!!",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx65243-mR4MnJFmfaOF.png",
+        "type": "manga",
+        "score": 6,
+        "url": "https://anilist.co/manga/65243"
+    },
+    {
+        "title": "JoJo no Kimyou na Bouken: Phantom Blood",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx31517-Y3pL6OTH74Iq.png",
+        "type": "manga",
+        "score": 4,
+        "url": "https://anilist.co/manga/31517"
+    },
+    {
+        "title": "Innocent",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85165-owwLAkh5RdBr.png",
+        "type": "manga",
+        "score": 9,
+        "url": "https://anilist.co/manga/85165"
+    },
+    {
+        "title": "Innocent Rouge",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87217-IQOLV9sGf91n.jpg",
+        "type": "manga",
+        "score": 9,
+        "url": "https://anilist.co/manga/87217"
+    },
+    {
+        "title": "Imawa no Kuni no Alice",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx63031-lE9pKD3cpmVK.jpg",
+        "type": "manga",
+        "score": 9,
+        "url": "https://anilist.co/manga/63031"
+    },
+    {
+        "title": "Kokou no Hito",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx37375-wkgev4kXhamw.png",
+        "type": "manga",
+        "score": 2,
+        "url": "https://anilist.co/manga/37375"
+    },
+    {
+        "title": "Usogui",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx39982-68LS2Z9075Kw.jpg",
+        "type": "manga",
+        "score": 10,
+        "url": "https://anilist.co/manga/39982"
+    },
+    {
+        "title": "Fire Punch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87170-nyuwcN7rU4pc.jpg",
+        "type": "manga",
+        "score": 3,
+        "url": "https://anilist.co/manga/87170"
+    },
+    {
+        "title": "My Girl",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx36164-s0tdXewGmPd3.png",
+        "type": "manga",
+        "score": 4,
+        "url": "https://anilist.co/manga/36164"
+    },
+    {
+        "title": "BORUTO: NARUTO NEXT GENERATIONS",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87178-CPMk8QdPo7c8.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/87178"
+    },
+    {
+        "title": "Yokohama Kaidashi Kikou",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b30004-k0YUnO94IB4x.jpg",
+        "type": "manga",
+        "score": 8,
+        "url": "https://anilist.co/manga/30004"
+    },
+    {
+        "title": "ZETMAN",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31534-HBISOyZgyIqj.jpg",
+        "type": "manga",
+        "score": 3,
+        "url": "https://anilist.co/manga/31534"
+    },
+    {
+        "title": "AQUA",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30124-GgVKXu3km7MH.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/30124"
+    },
+    {
+        "title": "DEATH NOTE: Tokubetsu Yomikiri",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx115122-HWsbTNeZyoFD.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/115122"
+    },
+    {
+        "title": "DEATH NOTE C-Kira-hen",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx34941-PyMwAPm58T8m.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/34941"
+    },
+    {
+        "title": "Look Back",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx136807-KNfQQTRD4HUK.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/136807"
+    },
+    {
+        "title": "Hisoka no Kako",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx103186-KchtSwVTCJRg.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/103186"
+    },
+    {
+        "title": "Gokurakugai Sanban-doori no Ken",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx115154-12CXd1lQejQm.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/115154"
+    },
+    {
+        "title": "Ao no Hako",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx122342-50btLRhAOhsk.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/122342"
+    },
+    {
+        "title": "Bankara-san ga Tooru",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx52810-3WdhHxuMYyOz.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/52810"
+    },
+    {
+        "title": "FC Barcelona Monogatari",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/9401.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/39401"
+    },
+    {
+        "title": "Kushami: Urasawa Naoki Tanpenshuu",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112439-rKkM5MPgWUva.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/112439"
+    },
+    {
+        "title": "Zelda no Densetsu: Skyward Sword",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx63581-RnB5I1Y1CX5n.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/63581"
+    },
+    {
+        "title": "BLEACH Gokumeimeihen",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx137620-iUpSBs33kQOY.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/137620"
+    },
+    {
+        "title": "Fujiko no Kimyou na Shoseijutsu: Whitesnake no Gosan",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx141803-UZbIzVpyrRXM.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/141803"
+    },
+    {
+        "title": "DAMiYAN!",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/98146-eb17E5p609C3.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/98146"
+    },
+    {
+        "title": "ONE PIECE x Toriko",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/25146.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/55146"
+    },
+    {
+        "title": "13",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx34836-Zc4SLu0tCWkj.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/34836"
+    },
+    {
+        "title": "EVANGELION: 3.0 (-120min.)",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx135927-wdQjHYfOFfIe.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/135927"
+    },
+    {
+        "title": "Berserk: Shinen no Kami 2",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx95821-jqolk3XdH4xf.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/95821"
+    },
+    {
+        "title": "#DRCL midnight children",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx127157-uMsiMKefIj4o.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/127157"
+    },
+    {
+        "title": "ONE PIECE: STRONG WORLD",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/n47152-v3AqgrZH9BsU.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/47152"
+    },
+    {
+        "title": "AMONG US",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143690-8DDyMdD7qCT5.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/143690"
+    },
+    {
+        "title": "Sayonara Eri",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146983-pLf4apCkFwKL.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/146983"
+    },
+    {
+        "title": "NARUTO Gaiden: Uzu no Naka no Tsumujikaze",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx165485-z0LYxfAY88Ff.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/165485"
+    },
+    {
+        "title": "HUNTER×HUNTER: Kurapika Tsuioku-hen",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx75996-31xQNNFRBnGy.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/75996"
+    },
+    {
+        "title": "20 Seiki Shounen: Ujiko Ujio Sakuhinshuu",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx45691-GZ5F27dNRcHi.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/45691"
+    },
+    {
+        "title": "Red Hood",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx135981-Xpm9OrtEHHcq.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/135981"
+    },
+    {
+        "title": "1-nichi Go ni Shinu Gorilla",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx129574-knBGx96XqrCR.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/129574"
+    },
+    {
+        "title": "My Broken Mariko",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112579-STxOi2dwQmTZ.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/112579"
+    },
+    {
+        "title": "Tokyo Ghoul: Jack",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85522-v5vjyUSCTvvl.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/85522"
+    },
+    {
+        "title": "not be, but be",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/26133.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/56133"
+    },
+    {
+        "title": "Kaguya-sama wa Kokurasetai Darkness",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx126244-VjHVPG4o7T3N.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/126244"
+    },
+    {
+        "title": "Suicide Parabellum",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85209-eFgxoVTGXNr6.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/85209"
+    },
+    {
+        "title": "Bibliomania",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx126135-63wqdasXoXsD.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/126135"
+    },
+    {
+        "title": "Megane, Tokidoki, Yankee-kun",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx128448-7EMeQjdXbB2k.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/128448"
+    },
+    {
+        "title": "Vagabond: Saigo no Manga-ten",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b135129-rbQyUsPfUZTj.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/135129"
+    },
+    {
+        "title": "Supyeongseon",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx100568-4BC0PsdwU4bL.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/100568"
+    },
+    {
+        "title": "Itou Junji no Neko Nikki: Yon & Mu",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx47192-6jXGGVX83Lub.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/47192"
+    },
+    {
+        "title": "Solanin",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx33731-AnTmPqTS2W8C.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/33731"
+    },
+    {
+        "title": "WANTED! Oda Eiichiro Tanpenshuu",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30793-Zca4SIWG5j8e.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/30793"
+    },
+    {
+        "title": "Dr. STONE reboot: Byakuya",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112673-ppxmIwBve158.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/112673"
+    },
+    {
+        "title": "Hotarubi no Mori e",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx33282-l7Ezv97XFiH0.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/33282"
+    },
+    {
+        "title": "Boy meets Maria",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx114027-Gnc0xPTUvmrb.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/114027"
+    },
+    {
+        "title": "ONE PIECE episode A",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx117802-CsCjUyuG4lSB.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/117802"
+    },
+    {
+        "title": "Gon",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31470-FRPB1z4kJtDI.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/31470"
+    },
+    {
+        "title": "Omoide Emanon",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx47465-YAPfE2a7LSFB.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/47465"
+    },
+    {
+        "title": "Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx97553-vqJj5DFS8v2p.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/97553"
+    },
+    {
+        "title": "Koisuru Kiseichuu",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx105768-Vh1iegsU5tJq.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/105768"
+    },
+    {
+        "title": "Hoshi Mamoru Inu",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx51467-RusjQiRfJxfr.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/51467"
+    },
+    {
+        "title": "Zoku Hoshi Mamoru Inu",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b55245-WVYZBGe3fqn0.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/55245"
+    },
+    {
+        "title": "Tomo-chan wa Onnanoko!",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx86300-VQWRaxoTXciF.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/86300"
+    },
+    {
+        "title": "METAL GEAR SOLID 2 INSTRUCTION MANGA",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b148141-CbbaVSXJc1de.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/148141"
+    },
+    {
+        "title": "Sasurai Emanon",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx66903-EVTKYXNCZR82.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/66903"
+    },
+    {
+        "title": "EMANON: Sasurai Emanon Episode: 1",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/31853.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/61853"
+    },
+    {
+        "title": "8-gatsu no Soda Sui",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx103065-vzMPzBtIb4dM.png",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/103065"
+    },
+    {
+        "title": "Bleach: Spirits Are Forever With You",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx73605-RbkvBQ2yKpBJ.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/73605"
+    },
+    {
+        "title": "Bleach: The Death Save The Strawberry",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/43607.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/73607"
+    },
+    {
+        "title": "Bleach: We Do Knot Always Love You",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx117412-tlPEwBSZjTCE.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/117412"
+    },
+    {
+        "title": "Bleach: Can't Fear Your Own World",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112709-VmCRFXVQcneJ.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/112709"
+    },
+    {
+        "title": "Bleach: The Honey Dish Rhapsody",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/22745.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/52745"
+    },
+    {
+        "title": "Bleach: Letters From the Other Side",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx52744-BzCo6emJCA1E.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/52744"
+    },
+    {
+        "title": "BLEACH: MEMORIES OF NOBODY",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx141700-4JC9o68f6JlY.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/141700"
+    },
+    {
+        "title": "Shousetsu Final Fantasy XV: The Dawn Of The Future",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx131784-JqExO6f2Ka7T.jpg",
+        "type": "manga",
+        "score": 0,
+        "url": "https://anilist.co/manga/131784"
+    },
+    {
+        "title": "Fata Morgana no Yakata: Anata no Genten ni Itaru Monogatari",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110992-ROmqSnw0QDTK.jpg",
+        "type": "manga",
+        "score": 9,
+        "url": "https://anilist.co/manga/110992"
+    },
+    {
+        "title": "Umineko no Naku Koro ni Episode 2: Turn of the Golden Witch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146744-g4Dw9YBoC4Uy.png",
+        "type": "manga",
+        "score": 6,
+        "url": "https://anilist.co/manga/146744"
+    },
+    {
+        "title": "Umineko no Naku Koro ni Episode 1: Legend of the Golden Witch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx102540-E64aMg63pacW.jpg",
+        "type": "manga",
+        "score": 5,
+        "url": "https://anilist.co/manga/102540"
+    },
+    {
+        "title": "Umineko no Naku Koro ni Episode 3: Banquet of the Golden Witch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146745-H15rfXYIzsiw.png",
+        "type": "manga",
+        "score": 9,
+        "url": "https://anilist.co/manga/146745"
+    },
+    {
+        "title": "Umineko no Naku Koro ni Episode 4: Alliance of the Golden Witch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146746-7JwYQSvCMkxl.png",
+        "type": "manga",
+        "score": 8,
+        "url": "https://anilist.co/manga/146746"
+    },
+    {
+        "title": "Umineko no Naku Koro ni Chiru Episode 5: End of the Golden Witch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx92936-Nhy7avArnylj.jpg",
+        "type": "manga",
+        "score": 10,
+        "url": "https://anilist.co/manga/92936"
+    },
+    {
+        "title": "Umineko no Naku Koro ni Chiru Episode 6: Dawn of the Golden Witch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146748-0dNGeJegU32u.png",
+        "type": "manga",
+        "score": 9,
+        "url": "https://anilist.co/manga/146748"
+    },
+    {
+        "title": "Umineko no Naku Koro ni Chiru Episode 7: Requiem of the Golden Witch",
+        "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146747-nx7R6SqfoZLi.png",
+        "type": "manga",
+        "score": 10,
+        "url": "https://anilist.co/manga/146747"
+    }
+]
