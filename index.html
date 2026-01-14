@@ -1,118 +1,113 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadorossa Collection</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shadorossa | Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="main-container">
-        <header class="profile-section">
-            <div class="avatar-container">
-                <img src="img/avatar.jpg" alt="Avatar" class="avatar" onerror="this.src='https://via.placeholder.com/150/334155/ffffff?text=S'">
+<div class="wrapper">
+    <header class="profile-box">
+        <img src="img/avatar.jpg" class="avatar-sq" alt="Shadorossa" onerror="this.src='https://via.placeholder.com/200'">
+        <div class="profile-info">
+            <h1>SHADOROSSA</h1>
+            <div class="stats-container">
+                <div>JUEGOS <span id="count-games" class="stat-val">0</span></div>
+                <div>ANIME <span id="count-anime" class="stat-val">0</span></div>
+                <div>MANGA <span id="count-manga" class="stat-val">0</span></div>
             </div>
-            <div class="profile-content">
-                <h1 class="profile-title">Shadorossa Archive</h1>
-                <p class="profile-bio">Colección digital sincronizada. Explorando mundos virtuales, una historia a la vez.</p>
-                
-                <div class="stats-badges">
-                    <div class="stat-badge">Total: <span id="total-count" class="text-accent">0</span></div>
-                    <div class="stat-badge"><span id="games-count">0</span> Juegos</div>
-                    <div class="stat-badge"><span id="anime-count">0</span> Anime</div>
-                    <div class="stat-badge"><span id="manga-count">0</span> Manga</div>
-                </div>
-            </div>
-        </header>
-
-        <div class="section-header">
-            <h2 class="section-title">Selección Destacada <span class="text-accent">//</span> Favoritos</h2>
         </div>
-        <div id="favorites-grid" class="gallery-grid featured-grid">
-            </div>
+    </header>
 
-        <div class="section-header flex-header">
-            <h2 class="section-title">Biblioteca Completa</h2>
-            <nav class="filter-nav">
-                <button class="filter-btn active" onclick="filter('all', this)">Todo</button>
-                <button class="filter-btn" onclick="filter('game', this)">Juegos</button>
-                <button class="filter-btn" onclick="filter('anime', this)">Anime</button>
-                <button class="filter-btn" onclick="filter('manga', this)">Manga</button>
-            </nav>
-        </div>
+    <div class="deco-line"></div>
 
-        <main id="main-grid" class="gallery-grid">
-            </main>
+    <span class="section-tag">Top Selected // Favoritos</span>
+    <section id="favorites-grid" class="fav-grid">
+        </section>
+
+    <div class="deco-line" style="width: 40%;"></div>
+
+    <div class="filter-nav">
+        <button class="filter-btn active" onclick="filter('all', this)">TODO</button>
+        <button class="filter-btn" onclick="filter('game', this)">JUEGOS</button>
+        <button class="filter-btn" onclick="filter('anime', this)">ANIME</button>
+        <button class="filter-btn" onclick="filter('manga', this)">MANGA</button>
     </div>
 
-    <script>
-        let fullDatabase = [];
+    <main id="main-grid" class="general-grid">
+        </main>
+</div>
 
-        async function init() {
-            try {
-                const [games, anime, manga, favNames] = await Promise.all([
-                    fetch('data/games.json').then(r => r.json()).catch(() => []),
-                    fetch('data/anime.json').then(r => r.json()).catch(() => []),
-                    fetch('data/manga.json').then(r => r.json()).catch(() => []),
-                    fetch('data/favorites.json').then(r => r.json()).catch(() => [])
-                ]);
+<script>
+    let db = [];
 
-                const g = games.map(i => ({ ...i, type: 'game' }));
-                const a = anime.map(i => ({ ...i, type: 'anime' }));
-                const m = manga.map(i => ({ ...i, type: 'manga' }));
-                fullDatabase = [...g, ...a, ...m];
+    async function load() {
+        try {
+            // Cargar datos (Asegúrate de que los archivos existen en data/)
+            const [g, a, m, favs] = await Promise.all([
+                fetch('data/games.json').then(r => r.json()).catch(() => []),
+                fetch('data/anime.json').then(r => r.json()).catch(() => []),
+                fetch('data/manga.json').then(r => r.json()).catch(() => []),
+                fetch('data/favorites.json').then(r => r.json()).catch(() => [])
+            ]);
 
-                document.getElementById('total-count').innerText = fullDatabase.length;
-                document.getElementById('games-count').innerText = g.length;
-                document.getElementById('anime-count').innerText = a.length;
-                document.getElementById('manga-count').innerText = m.length;
+            // Unificar base de datos
+            db = [
+                ...g.map(i => ({...i, type: 'game'})),
+                ...a.map(i => ({...i, type: 'anime'})),
+                ...m.map(i => ({...i, type: 'manga'}))
+            ];
 
-                const favorites = favNames.map(name => 
-                    fullDatabase.find(item => item.title.toLowerCase() === name.toLowerCase())
-                ).filter(Boolean);
-                renderGrid(favorites, 'favorites-grid');
+            // Actualizar contadores
+            document.getElementById('count-games').innerText = g.length;
+            document.getElementById('count-anime').innerText = a.length;
+            document.getElementById('count-manga').innerText = m.length;
 
-                const general = fullDatabase
-                    .filter(item => !favNames.some(f => f.toLowerCase() === item.title.toLowerCase()))
-                    .sort((a, b) => a.title.localeCompare(b.title));
-                renderGrid(general, 'main-grid');
+            // Renderizar Favoritos (Basado en el orden de favorites.json)
+            const favData = favs.map(title => db.find(item => item.title.toLowerCase() === title.toLowerCase())).filter(Boolean);
+            renderFavs(favData);
 
-            } catch (e) { console.error("Error:", e); }
-        }
+            // Renderizar General (Resto ordenado A-Z)
+            const generalData = db.filter(item => !favs.some(ft => ft.toLowerCase() === item.title.toLowerCase()))
+                                  .sort((x, y) => x.title.localeCompare(y.title));
+            renderGeneral(generalData);
 
-        function renderGrid(data, containerId) {
-            const container = document.getElementById(containerId);
-            // Notar el cambio en la estructura HTML de la tarjeta para el nuevo CSS
-            container.innerHTML = data.map(item => `
-                <div class="gallery-item" data-type="${item.type}">
-                    <div class="poster-container">
-                        <img src="${item.image}" alt="${item.title}" loading="lazy">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3 class="work-title">${item.title}</h3>
-                                <div class="work-meta">
-                                    <span class="meta-type">${item.type}</span>
-                                    ${item.score ? `<span class="meta-score">★ ${item.score}</span>` : ''}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        } catch (e) { console.error("Error cargando JSONs", e); }
+    }
+
+    function renderFavs(items) {
+        document.getElementById('favorites-grid').innerHTML = items.map((item, i) => `
+            <div class="fav-card">
+                <div class="rank-tag">#0${i+1}</div>
+                <img src="${item.image}" alt="${item.title}">
+                <div class="fav-info">
+                    <strong>${item.title}</strong><br>
+                    <small style="color:#555">${item.type.toUpperCase()}</small>
                 </div>
-            `).join('');
-        }
+            </div>
+        `).join('');
+    }
 
-        function filter(type, btn) {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const items = document.querySelectorAll('#main-grid .gallery-item');
-            items.forEach(item => {
-                item.style.display = (type === 'all' || item.getAttribute('data-type') === type) ? 'block' : 'none';
-            });
-        }
-        window.onload = init;
-    </script>
+    function renderGeneral(items) {
+        document.getElementById('main-grid').innerHTML = items.map(item => `
+            <div class="tile" data-type="${item.type}">
+                <img src="${item.image}" title="${item.title}" loading="lazy">
+            </div>
+        `).join('');
+    }
+
+    function filter(type, btn) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const tiles = document.querySelectorAll('.tile');
+        tiles.forEach(t => {
+            t.style.display = (type === 'all' || t.dataset.type === type) ? 'block' : 'none';
+        });
+    }
+
+    window.onload = load;
+</script>
 </body>
 </html>
