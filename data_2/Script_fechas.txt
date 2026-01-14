@@ -1,0 +1,55 @@
+(function() {
+    const STORAGE_KEY = 'backloggd_data_temp';
+    
+    // 1. Obtener datos ya guardados o iniciar lista vacía
+    let allGames = JSON.parse(sessionStorage.getItem(STORAGE_KEY)) || [];
+
+    console.log("%c Capturando página actual...", "color: #ffcc00; font-weight: bold;");
+
+    // 2. Extraer juegos de la página actual
+    const containers = document.querySelectorAll('#user-games-library-container .row.justify-content-center > div');
+    
+    containers.forEach(container => {
+        const linkTag = container.querySelector('a.cover-link');
+        const img = container.querySelector('img');
+        const dateTag = container.querySelector('.release-below');
+        const stars = container.querySelector('.stars-top');
+
+        let score = 0;
+        if (stars && stars.style.width) score = parseFloat(stars.style.width) / 10;
+
+        allGames.push({
+            "title": img ? img.alt.toUpperCase() : "UNKNOWN",
+            "image": img ? (img.getAttribute('data-src') || img.src) : "",
+            "type": "game",
+            "score": score,
+            "url": linkTag ? "https://backloggd.com" + linkTag.getAttribute('href') : "#",
+            "finishDate": dateTag ? dateTag.innerText.replace(/Played on\s+/i, '').trim() : ""
+        });
+    });
+
+    // 3. Guardar progreso en la sesión
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(allGames));
+
+    // 4. Buscar botón de "Siguiente"
+    const nextBtn = document.querySelector('.pagination .next a') || 
+                    document.querySelector('a[rel="next"]');
+
+    if (nextBtn) {
+        console.log(`%c Datos acumulados: ${allGames.length}. Pasando a la siguiente página...`, "color: #00ff00;");
+        // Esperar 2 segundos para no saturar y navegar
+        setTimeout(() => nextBtn.click(), 2000);
+    } else {
+        // 5. Finalizar y descargar
+        console.log("%c ¡Fin del archivo alcanzado!", "color: #ffcc00; font-weight: bold; font-size: 16px;");
+        const blob = new Blob([JSON.stringify(allGames, null, 4)], {type: 'application/json'});
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'games.json';
+        a.click();
+        
+        // Limpiar memoria
+        sessionStorage.removeItem(STORAGE_KEY);
+        console.log(`%c Descargados ${allGames.length} juegos en total.`, "color: #00ff00; font-weight: bold;");
+    }
+})();

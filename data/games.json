@@ -1,1 +1,2202 @@
-[]
+[
+    {
+        "title": "RANCE 03: THE FALL OF LEAZAS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4xsw.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/rance-03-the-fall-of-leazas/",
+        "finishDate": "2026-01-10"
+    },
+    {
+        "title": "RANCE 02: THE REBELLIOUS MAIDENS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co25vn.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/rance-02-the-rebellious-maidens/",
+        "finishDate": "2026-01-01"
+    },
+    {
+        "title": "RANCE 01: QUEST FOR HIKARI",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5x1e.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/rance-01-quest-for-hikari/",
+        "finishDate": "2025-12-31"
+    },
+    {
+        "title": "INAZUMA ELEVEN: VICTORY ROAD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9nsw.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-victory-road/",
+        "finishDate": "2025-11-15"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS THROUGH DAYBREAK II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8l3f.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-through-daybreak-ii/",
+        "finishDate": "2025-11-05"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS THROUGH DAYBREAK",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6vhg.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-through-daybreak/",
+        "finishDate": "2025-10-31"
+    },
+    {
+        "title": "YS I CHRONICLES+",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6ysv.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/ys-i-chronicles-plus/",
+        "finishDate": "2025-10-11"
+    },
+    {
+        "title": "UMINEKO NO NAKU KORO NI: EPISODE 7 - REQUIEM OF THE GOLDEN WITCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78nj.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/umineko-no-naku-koro-ni-episode-7-requiem-of-the-golden-witch/",
+        "finishDate": "2025-10-05"
+    },
+    {
+        "title": "UMINEKO NO NAKU KORO NI: EPISODE 6 - DAWN OF THE GOLDEN WITCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78nh.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/umineko-no-naku-koro-ni-episode-6-dawn-of-the-golden-witch/",
+        "finishDate": "2025-10-02"
+    },
+    {
+        "title": "BAYONETTA 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9e9.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/bayonetta-2/",
+        "finishDate": "2025-09-27"
+    },
+    {
+        "title": "TRAILS IN THE SKY 1ST CHAPTER",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co96kj.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/trails-in-the-sky-1st-chapter/",
+        "finishDate": "2025-09-24"
+    },
+    {
+        "title": "BAYONETTA",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9xp1.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/bayonetta--1/",
+        "finishDate": "2025-09-23"
+    },
+    {
+        "title": "HOLLOW KNIGHT: SILKSONG",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob87l.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hollow-knight-silksong/",
+        "finishDate": "2025-09-13"
+    },
+    {
+        "title": "METROID: ZERO MISSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vci.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metroid-zero-mission/",
+        "finishDate": "2025-09-11"
+    },
+    {
+        "title": "UMINEKO NO NAKU KORO NI: EPISODE 5 - END OF THE GOLDEN WITCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78ng.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/umineko-no-naku-koro-ni-episode-5-end-of-the-golden-witch/",
+        "finishDate": "2025-07-30"
+    },
+    {
+        "title": "THE LEGEND OF ZELDA: TEARS OF THE KINGDOM",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5vmg.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-zelda-tears-of-the-kingdom/",
+        "finishDate": "2025-07-14"
+    },
+    {
+        "title": "UMINEKO NO NAKU KORO NI: EPISODE 4 - ALLIANCE OF THE GOLDEN WITCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78la.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/umineko-no-naku-koro-ni-episode-4-alliance-of-the-golden-witch/",
+        "finishDate": "2025-07-13"
+    },
+    {
+        "title": "BALDUR'S GATE III",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co670h.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/baldurs-gate-iii/",
+        "finishDate": "2025-07-10"
+    },
+    {
+        "title": "CLAIR OBSCUR: EXPEDITION 33",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9gam.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/clair-obscur-expedition-33/",
+        "finishDate": "2025-07-04"
+    },
+    {
+        "title": "THE LAST OF US PART II REMASTERED",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa1gr.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-last-of-us-part-ii-remastered/",
+        "finishDate": "2025-06-29"
+    },
+    {
+        "title": "YAKUZA 5 REMASTERED",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2s11.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yakuza-5-remastered/",
+        "finishDate": "2025-06-21"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS INTO REVERIE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3bb2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-into-reverie/",
+        "finishDate": "2025-06-02"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS OF COLD STEEL IV",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co31wc.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-of-cold-steel-iv/",
+        "finishDate": "2025-05-21"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS OF COLD STEEL III",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8a1.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-of-cold-steel-iii/",
+        "finishDate": "2025-05-03"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS OF COLD STEEL II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co44mb.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-of-cold-steel-ii/",
+        "finishDate": "2025-04-16"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS OF COLD STEEL",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co44ma.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-of-cold-steel/",
+        "finishDate": "2025-04-13"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS TO AZURE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8gl.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-to-azure/",
+        "finishDate": "2025-04-06"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS FROM ZERO",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8gm.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-from-zero/",
+        "finishDate": "2025-03-11"
+    },
+    {
+        "title": "UMINEKO NO NAKU KORO NI: EPISODE 3 - BANQUET OF THE GOLDEN WITCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78ne.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/umineko-no-naku-koro-ni-episode-3-banquet-of-the-golden-witch--1/",
+        "finishDate": "2025-03-10"
+    },
+    {
+        "title": "FINAL FANTASY VII REBIRTH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co73ju.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-vii-rebirth/",
+        "finishDate": "2025-02-02"
+    },
+    {
+        "title": "UMINEKO NO NAKU KORO NI: EPISODE 2 - TURN OF THE GOLDEN WITCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78nd.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/umineko-no-naku-koro-ni-episode-2-turn-of-the-golden-witch--1/",
+        "finishDate": "2025-01-16"
+    },
+    {
+        "title": "UMINEKO NO NAKU KORO NI: EPISODE 1 - LEGEND OF THE GOLDEN WITCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co78nb.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/umineko-no-naku-koro-ni-episode-1-legend-of-the-golden-witch--1/",
+        "finishDate": "2025-01-11"
+    },
+    {
+        "title": "WONDERFUL EVERYDAY: DOWN THE RABBIT-HOLE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3wbe.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/wonderful-everyday-down-the-rabbit-hole/",
+        "finishDate": "2025-01-08"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS IN THE SKY THE 3RD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co74h3.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-in-the-sky-the-3rd/",
+        "finishDate": "2025-01-07"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS IN THE SKY SC",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co74em.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-in-the-sky-sc/",
+        "finishDate": "2024-12-31"
+    },
+    {
+        "title": "THE LEGEND OF HEROES: TRAILS IN THE SKY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7ybm.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-heroes-trails-in-the-sky/",
+        "finishDate": "2024-12-26"
+    },
+    {
+        "title": "FINAL FANTASY XVI",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co81g5.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xvi/",
+        "finishDate": "2024-12-22"
+    },
+    {
+        "title": "FINAL FANTASY VII REMAKE: EPISODE INTERMISSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9kc.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-vii-remake-episode-intermission/",
+        "finishDate": "2024-12-18"
+    },
+    {
+        "title": "FINAL FANTASY VII REMAKE INTERGRADE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9hh.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-vii-remake-intergrade/",
+        "finishDate": "2024-12-18"
+    },
+    {
+        "title": "SILENT HILL 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coavaf.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/silent-hill-2--1/",
+        "finishDate": "2024-10-19"
+    },
+    {
+        "title": "METAPHOR: REFANTAZIO",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8d9t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metaphor-refantazio/",
+        "finishDate": "2024-10-11"
+    },
+    {
+        "title": "DRAGON BALL: SPARKING! ZERO",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8bhn.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/dragon-ball-sparking-zero/",
+        "finishDate": "2024-10-08"
+    },
+    {
+        "title": "SILENT HILL 3",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kol.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/silent-hill-3/",
+        "finishDate": "2024-10-02"
+    },
+    {
+        "title": "PROFESSOR LAYTON AND THE DIABOLICAL BOX",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8ls.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/professor-layton-and-the-diabolical-box/",
+        "finishDate": "2024-10-01"
+    },
+    {
+        "title": "FINAL FANTASY XIV: THROUGH THE MAELSTROM",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6vmf.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xiv-through-the-maelstrom/",
+        "finishDate": "2024-09-29"
+    },
+    {
+        "title": "KIRBY SUPER STAR ULTRA",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3g9j.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/kirby-super-star-ultra/",
+        "finishDate": "2024-09-28"
+    },
+    {
+        "title": "FINAL FANTASY XVI: THE RISING TIDE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7h8t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xvi-the-rising-tide/",
+        "finishDate": "2024-09-28"
+    },
+    {
+        "title": "FINAL FANTASY XVI: ECHOES OF THE FALLEN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7hhs.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xvi-echoes-of-the-fallen/",
+        "finishDate": "2024-09-27"
+    },
+    {
+        "title": "ACE ATTORNEY INVESTIGATIONS: MILES EDGEWORTH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z8q.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/ace-attorney-investigations-miles-edgeworth/",
+        "finishDate": "2024-09-16"
+    },
+    {
+        "title": "APOLLO JUSTICE: ACE ATTORNEY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z8n.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/apollo-justice-ace-attorney/",
+        "finishDate": "2024-08-31"
+    },
+    {
+        "title": "THE GREAT ACE ATTORNEY 2: RESOLVE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9su.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-great-ace-attorney-2-resolve/",
+        "finishDate": "2024-08-13"
+    },
+    {
+        "title": "SHIN MEGAMI TENSEI V: VENGEANCE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7tq4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/shin-megami-tensei-v-vengeance/",
+        "finishDate": "2024-07-31"
+    },
+    {
+        "title": "THE GREAT ACE ATTORNEY: ADVENTURES",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9st.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-great-ace-attorney-adventures--1/",
+        "finishDate": "2024-06-20"
+    },
+    {
+        "title": "ALAN WAKE II: NIGHT SPRINGS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8c6g.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/alan-wake-ii-night-springs/",
+        "finishDate": "2024-06-11"
+    },
+    {
+        "title": "CYBERPUNK 2077",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaih8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/cyberpunk-2077/",
+        "finishDate": "2024-05-14"
+    },
+    {
+        "title": "CONTROL",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2evj.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/control/",
+        "finishDate": "2024-05-14"
+    },
+    {
+        "title": "ALAN WAKE II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6jar.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/alan-wake-ii/",
+        "finishDate": "2024-05-06"
+    },
+    {
+        "title": "YAKUZA 4 REMASTERED",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2s10.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yakuza-4-remastered/",
+        "finishDate": "2024-03-26"
+    },
+    {
+        "title": "PROFESSOR LAYTON AND THE CURIOUS VILLAGE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8lr.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/professor-layton-and-the-curious-village/",
+        "finishDate": "2024-03-24"
+    },
+    {
+        "title": "YAKUZA 3 REMASTERED",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co26ar.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yakuza-3-remastered/",
+        "finishDate": "2024-03-23"
+    },
+    {
+        "title": "THE LAST OF US PART I",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa1gq.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-last-of-us-part-i/",
+        "finishDate": "2024-03-21"
+    },
+    {
+        "title": "YAKUZA KIWAMI 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1qc.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yakuza-kiwami-2/",
+        "finishDate": "2024-03-10"
+    },
+    {
+        "title": "HELLDIVERS 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coabbf.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/helldivers-2/",
+        "finishDate": "2024-03-07"
+    },
+    {
+        "title": "YAKUZA KIWAMI",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1qh.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yakuza-kiwami/",
+        "finishDate": "2024-03-01"
+    },
+    {
+        "title": "YAKUZA 0",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co252x.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yakuza-0/",
+        "finishDate": "2024-02-24"
+    },
+    {
+        "title": "TEKKEN 8",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7lbb.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/tekken-8/",
+        "finishDate": "2024-02-21"
+    },
+    {
+        "title": "PERSONA 3 RELOAD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co73uv.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/persona-3-reload/",
+        "finishDate": "2024-02-16"
+    },
+    {
+        "title": "HELLO CHARLOTTE EP.1: JUNK FOOD, GODS AND TEDDY BEARS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co673t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hello-charlotte-ep-dot-1-junk-food-gods-and-teddy-bears/",
+        "finishDate": "2024-02-09"
+    },
+    {
+        "title": "CASTLEVANIA: SYMPHONY OF THE NIGHT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co53m8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/castlevania-symphony-of-the-night/",
+        "finishDate": "2024-01-26"
+    },
+    {
+        "title": "SILENT HILL 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2vyg.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/silent-hill-2/",
+        "finishDate": "2024-01-12"
+    },
+    {
+        "title": "CYBERPUNK 2077: PHANTOM LIBERTY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7566.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/cyberpunk-2077-phantom-liberty/",
+        "finishDate": "2024-01-06"
+    },
+    {
+        "title": "SILENT HILL",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2vye.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/silent-hill/",
+        "finishDate": "2024-01-04"
+    },
+    {
+        "title": "ALAN WAKE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dft.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/alan-wake/",
+        "finishDate": "2023-12-25"
+    },
+    {
+        "title": "POKÉMON OMEGA RUBY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6sz3.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-omega-ruby/",
+        "finishDate": "2023-12-23"
+    },
+    {
+        "title": "RESIDENT EVIL 4",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6bo0.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/resident-evil-4--1/",
+        "finishDate": "2023-12-16"
+    },
+    {
+        "title": "RESIDENT EVIL 4: SEPARATE WAYS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7lar.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/resident-evil-4-separate-ways--1/",
+        "finishDate": "2023-12-16"
+    },
+    {
+        "title": "FINAL FANTASY IX",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2unc.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-ix/",
+        "finishDate": "2023-12-11"
+    },
+    {
+        "title": "METAL GEAR SOLID 2: SONS OF LIBERTY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5e1e.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-solid-2-sons-of-liberty/",
+        "finishDate": "2023-11-16"
+    },
+    {
+        "title": "WITCH ON THE HOLY NIGHT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5s1h.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/witch-on-the-holy-night/",
+        "finishDate": "2023-11-04"
+    },
+    {
+        "title": "THE HOUSE IN FATA MORGANA",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co23cn.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-house-in-fata-morgana/",
+        "finishDate": "2023-09-22"
+    },
+    {
+        "title": "STARFIELD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co39vv.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/starfield/",
+        "finishDate": "2023-09-06"
+    },
+    {
+        "title": "CHRONO TRIGGER",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3plw.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/chrono-trigger/",
+        "finishDate": "2023-08-28"
+    },
+    {
+        "title": "CELESTE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9dh.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/celeste/",
+        "finishDate": "2023-08-17"
+    },
+    {
+        "title": "BATTLEFIELD 1",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n9d.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/battlefield-1/",
+        "finishDate": "2023-08-16"
+    },
+    {
+        "title": "FINAL FANTASY XIV: A REALM AWOKEN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5hvj.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xiv-a-realm-awoken/",
+        "finishDate": "2023-08-14"
+    },
+    {
+        "title": "FINAL FANTASY XIV: A REALM REBORN - COLLECTOR'S EDITION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vr2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xiv-a-realm-reborn-collectors-edition/",
+        "finishDate": "2023-08-13"
+    },
+    {
+        "title": "XENOBLADE CHRONICLES: DEFINITIVE EDITION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co27kt.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/xenoblade-chronicles-definitive-edition/",
+        "finishDate": "2023-07-30"
+    },
+    {
+        "title": "HALO: REACH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xha.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/halo-reach/",
+        "finishDate": "2023-07-26"
+    },
+    {
+        "title": "DEAD SPACE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g7w.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/dead-space/",
+        "finishDate": "2023-07-16"
+    },
+    {
+        "title": "HADES",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co39vc.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hades--1/",
+        "finishDate": "2023-07-01"
+    },
+    {
+        "title": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v85.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-solid-v-the-phantom-pain/",
+        "finishDate": "2023-06-29"
+    },
+    {
+        "title": "METAL GEAR SOLID: PEACE WALKER",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coawb5.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-solid-peace-walker/",
+        "finishDate": "2023-06-11"
+    },
+    {
+        "title": "METAL GEAR SOLID V: GROUND ZEROES",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1v88.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-solid-v-ground-zeroes/",
+        "finishDate": "2023-06-11"
+    },
+    {
+        "title": "GHOST OF TSUSHIMA: DIRECTOR'S CUT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3p5f.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/ghost-of-tsushima-directors-cut/",
+        "finishDate": "2023-06-09"
+    },
+    {
+        "title": "METAL GEAR RISING: REVENGEANCE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2l1t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-rising-revengeance/",
+        "finishDate": "2023-06-01"
+    },
+    {
+        "title": "METAL GEAR SOLID 4: GUNS OF THE PATRIOTS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5eju.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-solid-4-guns-of-the-patriots/",
+        "finishDate": "2023-05-28"
+    },
+    {
+        "title": "FINAL FANTASY II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6pla.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-ii--3/",
+        "finishDate": "2023-05-03"
+    },
+    {
+        "title": "FINAL FANTASY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6pl8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy--3/",
+        "finishDate": "2023-04-30"
+    },
+    {
+        "title": "SUPERHOT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7ybp.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/superhot/",
+        "finishDate": "2023-04-18"
+    },
+    {
+        "title": "BLOODBORNE: THE OLD HUNTERS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob99k.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/bloodborne-the-old-hunters--1/",
+        "finishDate": "2023-04-09"
+    },
+    {
+        "title": "PHOENIX WRIGHT: ACE ATTORNEY TRILOGY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa7iv.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/phoenix-wright-ace-attorney-trilogy/",
+        "finishDate": "2023-04-07"
+    },
+    {
+        "title": "GOD OF WAR III",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3koi.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/god-of-war-iii/",
+        "finishDate": "2023-03-31"
+    },
+    {
+        "title": "GOD OF WAR",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9h2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/god-of-war--1/",
+        "finishDate": "2023-03-31"
+    },
+    {
+        "title": "RESIDENT EVIL 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ir3.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/resident-evil-2--1/",
+        "finishDate": "2023-03-29"
+    },
+    {
+        "title": "BLOODBORNE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob99l.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/bloodborne/",
+        "finishDate": "2023-03-22"
+    },
+    {
+        "title": "GOD OF WAR II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3dik.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/god-of-war-ii/",
+        "finishDate": "2023-03-17"
+    },
+    {
+        "title": "METAL GEAR SOLID 3 SNAKE EATER",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ei5.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-solid-3-snake-eater/",
+        "finishDate": "2023-03-11"
+    },
+    {
+        "title": "ASTRO'S PLAYROOM",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9hb4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/astros-playroom/",
+        "finishDate": "2023-03-08"
+    },
+    {
+        "title": "GOD OF WAR",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ddc.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/god-of-war/",
+        "finishDate": "2023-01-28"
+    },
+    {
+        "title": "HITMAN 3",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co29lt.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hitman-3/",
+        "finishDate": "2022-12-31"
+    },
+    {
+        "title": "METAL GEAR SOLID",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co55si.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-solid/",
+        "finishDate": "2022-12-26"
+    },
+    {
+        "title": "ELDEN RING",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/elden-ring/",
+        "finishDate": "2022-12-16"
+    },
+    {
+        "title": "FINAL FANTASY VII",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kx2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-vii/",
+        "finishDate": "2022-12-04"
+    },
+    {
+        "title": "HITMAN 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qcq.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hitman-2/",
+        "finishDate": "2022-12-02"
+    },
+    {
+        "title": "DEVIL MAY CRY 5",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rb4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/devil-may-cry-5/",
+        "finishDate": "2022-11-27"
+    },
+    {
+        "title": "HITMAN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2fgr.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hitman/",
+        "finishDate": "2022-11-25"
+    },
+    {
+        "title": "PERSONA 5 ROYAL",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7jry.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/persona-5-royal/",
+        "finishDate": "2022-11-06"
+    },
+    {
+        "title": "FINAL FANTASY XV: WINDOWS EDITION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co205r.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xv-windows-edition/",
+        "finishDate": "2022-11-06"
+    },
+    {
+        "title": "FINAL FANTASY XIV ONLINE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaxxp.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xiv-online--1/",
+        "finishDate": "2022-10-12"
+    },
+    {
+        "title": "DEVIL MAY CRY 4: SPECIAL EDITION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u6t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/devil-may-cry-4-special-edition/",
+        "finishDate": "2022-10-10"
+    },
+    {
+        "title": "SHIN MEGAMI TENSEI V",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co39zk.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/shin-megami-tensei-v/",
+        "finishDate": "2022-10-05"
+    },
+    {
+        "title": "DEVIL MAY CRY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9ck7.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/devil-may-cry/",
+        "finishDate": "2022-09-27"
+    },
+    {
+        "title": "DEVIL MAY CRY 3: DANTE'S AWAKENING - SPECIAL EDITION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5oqp.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/devil-may-cry-3-dantes-awakening-special-edition/",
+        "finishDate": "2022-09-24"
+    },
+    {
+        "title": "SEKIRO: SHADOWS DIE TWICE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2a23.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/sekiro-shadows-die-twice/",
+        "finishDate": "2022-09-12"
+    },
+    {
+        "title": "PERSONA 4 GOLDEN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1n1x.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/persona-4-golden/",
+        "finishDate": "2022-08-16"
+    },
+    {
+        "title": "PERSONA 3 FES",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5wha.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/persona-3-fes/",
+        "finishDate": "2022-07-19"
+    },
+    {
+        "title": "HOLLOW KNIGHT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co93cr.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hollow-knight/",
+        "finishDate": "2022-07-07"
+    },
+    {
+        "title": "MILK OUTSIDE A BAG OF MILK OUTSIDE A BAG OF MILK",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4bsi.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/milk-outside-a-bag-of-milk-outside-a-bag-of-milk/",
+        "finishDate": "2022-06-12"
+    },
+    {
+        "title": "POKÉMON SWORD: THE CROWN TUNDRA",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob7zu.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-sword-the-crown-tundra/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON SWORD: THE ISLE OF ARMOR",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob7zv.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-sword-the-isle-of-armor/",
+        "finishDate": ""
+    },
+    {
+        "title": "PLANTS VS. ZOMBIES: GARDEN WARFARE 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3xur.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/plants-vs-zombies-garden-warfare-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "CLASH OF CLANS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mb8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/clash-of-clans/",
+        "finishDate": ""
+    },
+    {
+        "title": "CLASH ROYALE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mb7.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/clash-royale/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON ULTRA SUN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zjs.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-ultra-sun/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON SUN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3co7.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-sun/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH BLASTERS: MOON RABBIT CREW",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8ks7.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch-blasters-moon-rabbit-crew/",
+        "finishDate": ""
+    },
+    {
+        "title": "OUTLAST",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1yat.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/outlast/",
+        "finishDate": ""
+    },
+    {
+        "title": "OUTLAST II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20x8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/outlast-ii/",
+        "finishDate": ""
+    },
+    {
+        "title": "PLANTS VS. ZOMBIES",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co69id.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/plants-vs-zombies/",
+        "finishDate": ""
+    },
+    {
+        "title": "PLANTS VS. ZOMBIES 2: IT'S ABOUT TIME",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co92ms.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/plants-vs-zombies-2-it-s-about-time/",
+        "finishDate": ""
+    },
+    {
+        "title": "NEW SUPER MARIO BROS. U DELUXE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uhl.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/new-super-mario-bros-u-deluxe/",
+        "finishDate": ""
+    },
+    {
+        "title": "MINECRAFT DUNGEONS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co233r.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/minecraft-dungeons/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIVE NIGHTS AT FREDDY'S 4",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8efh.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/five-nights-at-freddys-4/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIVE NIGHTS AT FREDDY'S 3",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8kd3.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/five-nights-at-freddys-3/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIVE NIGHTS AT FREDDY'S",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8efb.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/five-nights-at-freddys/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIVE NIGHTS AT FREDDY'S 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8efd.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/five-nights-at-freddys-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "SUPER MARIO 3D WORLD + BOWSER'S FURY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2uo9.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/super-mario-3d-world-plus-bowsers-fury/",
+        "finishDate": ""
+    },
+    {
+        "title": "HYRULE WARRIORS: AGE OF CALAMITY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob22n.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hyrule-warriors-age-of-calamity/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN STRIKERS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qek.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-strikers/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN GO STRIKERS 2013",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6t3s.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-go-strikers-2013/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN STRIKERS 2012 XTREME",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6t3r.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-strikers-2012-xtreme/",
+        "finishDate": ""
+    },
+    {
+        "title": "OVERWATCH 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co885f.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/overwatch-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "HONKAI: STAR RAIL",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coasur.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/honkai-star-rail/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON PICROSS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2sww.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-picross/",
+        "finishDate": ""
+    },
+    {
+        "title": "GRAND THEFT AUTO V",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/grand-theft-auto-v/",
+        "finishDate": ""
+    },
+    {
+        "title": "FALL GUYS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa7cs.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/fall-guys/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN 3: TEAM OGRE ATTACKS!",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co407s.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-3-team-ogre-attacks/",
+        "finishDate": ""
+    },
+    {
+        "title": "BALATRO",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9f4g.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/balatro/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN GO: LIGHT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co407o.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-go-light/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON SHIELD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk1.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-shield/",
+        "finishDate": ""
+    },
+    {
+        "title": "OVERWATCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rcb.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/overwatch/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIFA 17",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co206t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/fifa-17/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN GO GALAXY: SUPERNOVA",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9s8s.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-go-galaxy-supernova/",
+        "finishDate": ""
+    },
+    {
+        "title": "MARIO KART WORLD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9m78.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/mario-kart-world/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH 3",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2hax.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch-3/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN GO: CHRONO STONES - THUNDERFLASH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3h2z.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-go-chrono-stones-thunderflash/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN 2: FIRESTORM",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co407m.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-2-firestorm/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN 2: BLIZZARD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co407n.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-2-blizzard/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH 2: PSYCHIC SPECTERS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7dr0.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch-2-psychic-specters/",
+        "finishDate": ""
+    },
+    {
+        "title": "PHOENIX WRIGHT: ACE ATTORNEY - JUSTICE FOR ALL",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z8t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/phoenix-wright-ace-attorney-justice-for-all/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN SD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1sq1.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-sd/",
+        "finishDate": ""
+    },
+    {
+        "title": "CONTENT WARNING",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8086.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/content-warning/",
+        "finishDate": ""
+    },
+    {
+        "title": "EA SPORTS FC 25",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa755.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/ea-sports-fc-25/",
+        "finishDate": ""
+    },
+    {
+        "title": "DEVOTION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2muf.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/devotion/",
+        "finishDate": ""
+    },
+    {
+        "title": "BLEACH: REBIRTH OF SOULS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8glj.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/bleach-rebirth-of-souls/",
+        "finishDate": ""
+    },
+    {
+        "title": "WARFRAME",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coasis.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/warframe/",
+        "finishDate": ""
+    },
+    {
+        "title": "GENSHIN IMPACT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa9dy.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/genshin-impact/",
+        "finishDate": ""
+    },
+    {
+        "title": "DELTARUNE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9m71.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/deltarune/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN GO: SHADOW",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2zi4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-go-shadow/",
+        "finishDate": ""
+    },
+    {
+        "title": "THE SEVEN DEADLY SINS: KNIGHTS OF BRITANNIA",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1re2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-seven-deadly-sins-knights-of-britannia/",
+        "finishDate": ""
+    },
+    {
+        "title": "EA SPORTS FC 24",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6qqa.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/ea-sports-fc-24/",
+        "finishDate": ""
+    },
+    {
+        "title": "UNDERTALE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob1t2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/undertale/",
+        "finishDate": ""
+    },
+    {
+        "title": "THE SEVEN DEADLY SINS: GRAND CROSS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co80dp.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-seven-deadly-sins-grand-cross/",
+        "finishDate": ""
+    },
+    {
+        "title": "HELLO NEIGHBOR 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co81i8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hello-neighbor-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "HELLO NEIGHBOR",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8kr5.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hello-neighbor/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIFA 18",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1uxd.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/fifa-18/",
+        "finishDate": ""
+    },
+    {
+        "title": "FORTNITE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaxt6.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/fortnite/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIFA 23",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4zw5.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/fifa-23/",
+        "finishDate": ""
+    },
+    {
+        "title": "SONIC FORCES",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zr8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/sonic-forces/",
+        "finishDate": ""
+    },
+    {
+        "title": "UNTIL DAWN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2s5q.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/until-dawn/",
+        "finishDate": ""
+    },
+    {
+        "title": "ULTRAKILL",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co46s3.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/ultrakill/",
+        "finishDate": ""
+    },
+    {
+        "title": "FIFA SOCCER 12",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6hah.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/fifa-soccer-12/",
+        "finishDate": ""
+    },
+    {
+        "title": "PRO EVOLUTION SOCCER 2017",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxt.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pro-evolution-soccer-2017/",
+        "finishDate": ""
+    },
+    {
+        "title": "PRO EVOLUTION SOCCER 2018",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ug5.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pro-evolution-soccer-2018/",
+        "finishDate": ""
+    },
+    {
+        "title": "PRO EVOLUTION SOCCER 2019",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ug4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pro-evolution-soccer-2019/",
+        "finishDate": ""
+    },
+    {
+        "title": "EFOOTBALL PES 2021 SEASON UPDATE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2g3c.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/efootball-pes-2021-season-update/",
+        "finishDate": ""
+    },
+    {
+        "title": "EFOOTBALL PES 2020",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1m14.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/efootball-pes-2020/",
+        "finishDate": ""
+    },
+    {
+        "title": "YOSHI'S ISLAND DS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4wgl.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yoshis-island-ds/",
+        "finishDate": ""
+    },
+    {
+        "title": "BATTLE B-DAMAN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5p6y.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/battle-b-daman/",
+        "finishDate": ""
+    },
+    {
+        "title": "DRAGON BALL Z: KAKAROT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2kqa.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/dragon-ball-z-kakarot/",
+        "finishDate": ""
+    },
+    {
+        "title": "METAL GEAR 2: SOLID SNAKE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3whu.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear-2-solid-snake/",
+        "finishDate": ""
+    },
+    {
+        "title": "THE LEGEND OF ZELDA: BREATH OF THE WILD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3p2d.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-zelda-breath-of-the-wild/",
+        "finishDate": ""
+    },
+    {
+        "title": "METAL GEAR",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ogc.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/metal-gear/",
+        "finishDate": ""
+    },
+    {
+        "title": "PHOENIX WRIGHT: ACE ATTORNEY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z8s.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/phoenix-wright-ace-attorney/",
+        "finishDate": ""
+    },
+    {
+        "title": "PHOENIX WRIGHT: ACE ATTORNEY - TRIALS AND TRIBULATIONS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5z8u.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/phoenix-wright-ace-attorney-trials-and-tribulations/",
+        "finishDate": ""
+    },
+    {
+        "title": "HITMAN WORLD OF ASSASSINATION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co620f.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/hitman-world-of-assassination/",
+        "finishDate": ""
+    },
+    {
+        "title": "DRAGON BALL: XENOVERSE 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9hs4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/dragon-ball-xenoverse-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "DRAGON BALL: XENOVERSE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1u94.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/dragon-ball-xenoverse/",
+        "finishDate": ""
+    },
+    {
+        "title": "CALL OF DUTY: BLACK OPS III",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20yw.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/call-of-duty-black-ops-iii/",
+        "finishDate": ""
+    },
+    {
+        "title": "DRAGON BALL Z: DOKKAN BATTLE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tpw.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/dragon-ball-z-dokkan-battle/",
+        "finishDate": ""
+    },
+    {
+        "title": "MILK INSIDE A BAG OF MILK INSIDE A BAG OF MILK",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co66n4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/milk-inside-a-bag-of-milk-inside-a-bag-of-milk/",
+        "finishDate": ""
+    },
+    {
+        "title": "SPLATOON 2: OCTO EXPANSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8rb.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/splatoon-2-octo-expansion/",
+        "finishDate": ""
+    },
+    {
+        "title": "STAR WARS JEDI: FALLEN ORDER",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbi.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/star-wars-jedi-fallen-order/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON PLATINUM VERSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8gvp.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-platinum-version/",
+        "finishDate": ""
+    },
+    {
+        "title": "MARVEL'S SPIDER-MAN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/marvels-spider-man/",
+        "finishDate": ""
+    },
+    {
+        "title": "MINECRAFT: JAVA EDITION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa77e.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/minecraft-java-edition/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON WHITE VERSION 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z8e.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-white-version-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "RAYMAN LEGENDS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ma8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/rayman-legends/",
+        "finishDate": ""
+    },
+    {
+        "title": "JOJO'S BIZARRE ADVENTURE: ALL STAR BATTLE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qgm.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/jojo-s-bizarre-adventure-all-star-battle/",
+        "finishDate": ""
+    },
+    {
+        "title": "JOJO'S BIZARRE ADVENTURE: EYES OF HEAVEN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co55p6.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/jojos-bizarre-adventure-eyes-of-heaven/",
+        "finishDate": ""
+    },
+    {
+        "title": "CLUB PENGUIN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2594.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/club-penguin/",
+        "finishDate": ""
+    },
+    {
+        "title": "KIRBY TRIPLE DELUXE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q9m.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/kirby-triple-deluxe/",
+        "finishDate": ""
+    },
+    {
+        "title": "MARIO KART 8 DELUXE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co213p.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/mario-kart-8-deluxe/",
+        "finishDate": ""
+    },
+    {
+        "title": "MARIO KART 8",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co213q.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/mario-kart-8/",
+        "finishDate": ""
+    },
+    {
+        "title": "MARIO KART 64",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co67hm.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/mario-kart-64/",
+        "finishDate": ""
+    },
+    {
+        "title": "MARIO KART 7",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2146.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/mario-kart-7/",
+        "finishDate": ""
+    },
+    {
+        "title": "NINTENDOGS + CATS: GOLDEN RETRIEVER & NEW FRIENDS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6l5l.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/nintendogs-plus-cats-golden-retriever-and-new-friends/",
+        "finishDate": ""
+    },
+    {
+        "title": "SKYLANDERS: SWAP FORCE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ysb.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/skylanders-swap-force/",
+        "finishDate": ""
+    },
+    {
+        "title": "NEW SUPER MARIO BROS.",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21rm.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/new-super-mario-bros/",
+        "finishDate": ""
+    },
+    {
+        "title": "MONUMENT VALLEY II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaev4.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/monument-valley-ii/",
+        "finishDate": ""
+    },
+    {
+        "title": "MONUMENT VALLEY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaeoe.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/monument-valley/",
+        "finishDate": ""
+    },
+    {
+        "title": "PLANTS VS. ZOMBIES: GARDEN WARFARE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qyz.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/plants-vs-zombies-garden-warfare-2e561d33-2b92-408a-92f2-ec79ddcc6c2b/",
+        "finishDate": ""
+    },
+    {
+        "title": "RETROWAVE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co265p.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/retrowave/",
+        "finishDate": ""
+    },
+    {
+        "title": "ASTRAL CHAIN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1lzy.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/astral-chain/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON FIRERED VERSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ziq.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-firered-version/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON MOON",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3co8.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-moon/",
+        "finishDate": ""
+    },
+    {
+        "title": "CLUSTERTRUCK",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/qv5ypq6l4v7epivnhoop.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/clustertruck/",
+        "finishDate": ""
+    },
+    {
+        "title": "SPLATOON 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6dn3.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/splatoon-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "LITTLE INFERNO",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co253v.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/little-inferno/",
+        "finishDate": ""
+    },
+    {
+        "title": "SPLATOON",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob8ra.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/splatoon/",
+        "finishDate": ""
+    },
+    {
+        "title": "FINAL FANTASY XV: EPISODE GLADIOLUS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vj2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/final-fantasy-xv-episode-gladiolus/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKKÉN TOURNAMENT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zj1.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokken-tournament/",
+        "finishDate": ""
+    },
+    {
+        "title": "SUPER SMASH BROS. FOR NINTENDO 3DS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wvk.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/super-smash-bros-for-nintendo-3ds/",
+        "finishDate": ""
+    },
+    {
+        "title": "MARIO KART DS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9rx.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/mario-kart-ds/",
+        "finishDate": ""
+    },
+    {
+        "title": "SUPER MARIO 3D LAND",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co21tq.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/super-mario-3d-land/",
+        "finishDate": ""
+    },
+    {
+        "title": "SUPER MARIO 64",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co721v.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/super-mario-64/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH BLASTERS: RED CAT CORPS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2zoi.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch-blasters-red-cat-corps/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN GO: GALAXY BIG BANG",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3dnd.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-go-galaxy-big-bang/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN GO: CHRONO STONES - WILDFIRE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3h31.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven-go-chrono-stones-wildfire/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH 2: FLESHY SOULS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6o27.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch-2-fleshy-souls/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH 2: BONY SPIRITS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co24jl.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch-2-bony-spirits/",
+        "finishDate": ""
+    },
+    {
+        "title": "SUPER MARIO ODYSSEY",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1mxf.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/super-mario-odyssey/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON HEARTGOLD VERSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z57.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-heartgold-version/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON: LET'S GO, PIKACHU!",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zjy.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-lets-go-pikachu/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON Y",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z9m.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-y/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7l9q.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch/",
+        "finishDate": ""
+    },
+    {
+        "title": "YO-KAI WATCH BLASTERS: WHITE DOG SQUAD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2zoh.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/yo-kai-watch-blasters-white-dog-squad/",
+        "finishDate": ""
+    },
+    {
+        "title": "SUPER SMASH BROS. ULTIMATE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2255.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/super-smash-bros-ultimate/",
+        "finishDate": ""
+    },
+    {
+        "title": "SUPER MARIO 64 DS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2u80.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/super-mario-64-ds/",
+        "finishDate": ""
+    },
+    {
+        "title": "INAZUMA ELEVEN",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ukm.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/inazuma-eleven/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON LIGHT PLATINUM",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co90cs.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-light-platinum/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON ALPHA SAPPHIRE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co56ef.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-alpha-sapphire/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON ULTRA MOON",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zjt.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-ultra-moon/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON WHITE VERSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z21.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-white-version/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON SOULSILVER VERSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z59.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-soulsilver-version/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON BLACK VERSION",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z1x.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-black-version/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON BLACK VERSION 2",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z8d.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-black-version-2/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON INSURGENCE",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6i8t.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-insurgence/",
+        "finishDate": ""
+    },
+    {
+        "title": "DRAGON BALL FIGHTERZ",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nih.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/dragon-ball-fighterz/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON RUMBLE BLAST",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1z24.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-rumble-blast/",
+        "finishDate": ""
+    },
+    {
+        "title": "POKÉMON SWORD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1zk2.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/pokemon-sword/",
+        "finishDate": ""
+    },
+    {
+        "title": "THE LEGEND OF ZELDA: BREATH OF THE WILD - THE MASTER TRIALS",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ujg.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-zelda-breath-of-the-wild-the-master-trials/",
+        "finishDate": ""
+    },
+    {
+        "title": "THE LEGEND OF ZELDA: BREATH OF THE WILD - THE CHAMPIONS' BALLAD",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ujd.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/the-legend-of-zelda-breath-of-the-wild-the-champions-ballad/",
+        "finishDate": ""
+    },
+    {
+        "title": "STAR WARS BATTLEFRONT II",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3wi7.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/star-wars-battlefront-ii--1/",
+        "finishDate": ""
+    },
+    {
+        "title": "STAR WARS BATTLEFRONT",
+        "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2res.jpg",
+        "type": "game",
+        "score": 0,
+        "url": "https://backloggd.com/games/star-wars-battlefront--1/",
+        "finishDate": ""
+    }
+]

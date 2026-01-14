@@ -9,19 +9,15 @@
 </head>
 
 <body>
-
     <div class="wrapper">
         <header class="profile-box animate-in">
             <img src="img/avatar.png" class="avatar-sq" alt="Profile">
             <div class="profile-info">
                 <h1>SHADOROSSA</h1>
                 <div class="stats-container">
-                    <div class="stat-item" title="Juegos"><i class="fa-solid fa-gamepad"></i> <span id="count-games"
-                            class="stat-val">0</span></div>
-                    <div class="stat-item" title="Anime"><i class="fa-solid fa-tv"></i> <span id="count-anime"
-                            class="stat-val">0</span></div>
-                    <div class="stat-item" title="Manga"><i class="fa-solid fa-book-open"></i> <span id="count-manga"
-                            class="stat-val">0</span></div>
+                    <div class="stat-item"><i class="fa-solid fa-gamepad"></i> <span id="count-games">0</span></div>
+                    <div class="stat-item"><i class="fa-solid fa-tv"></i> <span id="count-anime">0</span></div>
+                    <div class="stat-item"><i class="fa-solid fa-book-open"></i> <span id="count-manga">0</span></div>
                 </div>
             </div>
         </header>
@@ -38,21 +34,18 @@
         <div class="controls-row">
             <div class="search-wrapper">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="search" class="search-input" placeholder="ACCEDER A LA BASE DE DATOS..."
+                <input type="text" id="search" class="search-input" placeholder="ACCEDER AL ARCHIVO..."
                     oninput="handleSearch(this.value)">
             </div>
-
             <nav class="filter-nav">
-                <button class="filter-btn active" title="Todo" onclick="setFilter('all', this)"><i
+                <button class="filter-btn active" onclick="setFilter('all', this)"><i
                         class="fa-solid fa-layer-group"></i></button>
-                <button class="filter-btn" title="Juegos" onclick="setFilter('game', this)"><i
+                <button class="filter-btn" onclick="setFilter('game', this)"><i
                         class="fa-solid fa-gamepad"></i></button>
-                <button class="filter-btn" title="Anime" onclick="setFilter('anime', this)"><i
-                        class="fa-solid fa-tv"></i></button>
-                <button class="filter-btn" title="Manga" onclick="setFilter('manga', this)"><i
+                <button class="filter-btn" onclick="setFilter('anime', this)"><i class="fa-solid fa-tv"></i></button>
+                <button class="filter-btn" onclick="setFilter('manga', this)"><i
                         class="fa-solid fa-book-open"></i></button>
             </nav>
-
             <div class="sort-group">
                 <select class="sort-select" id="sort-key" onchange="update()">
                     <option value="title">TITLE</option>
@@ -63,85 +56,148 @@
                         id="dir-icon"></i></button>
             </div>
         </div>
-
         <main id="main-grid" class="general-grid"></main>
     </div>
 
     <script>
-        let database = [];
-        let filteredList = [];
-        let currentFilter = 'all';
-        let searchQuery = '';
-        let sortAsc = true;
+        let database = []; let filteredList = []; let currentFilter = 'all'; let searchQuery = ''; let sortAsc = true;
 
+        // --- SUBTÍTULOS DORADOS ---
         function formatTitle(title) {
             let main = title; let sub = "";
             if (title.includes(": ")) {
-                const parts = title.split(": "); main = parts[0]; sub = parts.slice(1).join(": ");
+                const parts = title.split(": ");
+                main = parts[0];
+                sub = parts.slice(1).join(": ");
             } else {
                 const regex = /^(.*?)(\s(?:Season\s\d+|Part\s\d+|Vol\s\d+|\d+(?:st|nd|rd|th)\sSeason|\d+))$/i;
                 const match = title.match(regex);
-                if (match && !match[2].trim().includes('-')) { main = match[1]; sub = match[2]; }
+                if (match) {
+                    main = match[1];
+                    sub = match[2];
+                }
             }
             return `<span class="main-title">${main.trim()}</span>${sub ? `<span class="sub-title">${sub.trim()}</span>` : ''}`;
         }
 
+        // --- LÓGICA DE NOTAS (LOCALSTORAGE) ---
+        function getCustomScores() { return JSON.parse(localStorage.getItem('shadorossa_custom_scores') || '{}'); }
+
+        function toggleRatingMenu(e, id) {
+            e.preventDefault();
+            e.stopPropagation();
+            const popover = document.getElementById(`pop-${id}`);
+            document.querySelectorAll('.rating-popover').forEach(el => {
+                if (el !== popover) el.classList.remove('active');
+            });
+            if (popover) popover.classList.toggle('active');
+        }
+
+        function applyScore(e, url, score) {
+            e.preventDefault();
+            e.stopPropagation();
+            const scores = getCustomScores();
+            if (score === null) delete scores[url];
+            else scores[url] = score;
+            localStorage.setItem('shadorossa_custom_scores', JSON.stringify(scores));
+            init();
+        }
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.score-hexagon') && !e.target.closest('.rating-popover')) {
+                document.querySelectorAll('.rating-popover').forEach(el => el.classList.remove('active'));
+            }
+        });
+
         async function init() {
             const fetchJSON = p => fetch(p).then(r => r.ok ? r.json() : []);
-            const [games, anime, manga, favNames] = await Promise.all([
-                fetchJSON('data/games.json'), fetchJSON('data/anime.json'),
-                fetchJSON('data/manga.json'), fetchJSON('data/favorites.json')
+
+            // 1. Cargamos todos los datos, incluyendo la BLACKLIST
+            const [games, anime, manga, favNames, blacklistNames] = await Promise.all([
+                fetchJSON('data/games.json'),
+                fetchJSON('data/anime.json'),
+                fetchJSON('data/manga.json'),
+                fetchJSON('data/favorites.json'),
+                fetchJSON('data/blacklist.json') // Nuevo archivo
             ]);
 
-            database = [
-                ...games.map(i => ({ ...i, type: 'game', score: parseFloat(i.score) || 0 })),
-                ...anime.map(i => ({ ...i, type: 'anime', score: parseFloat(i.score) || 0 })),
-                ...manga.map(i => ({ ...i, type: 'manga', score: parseFloat(i.score) || 0 }))
-            ];
+            const customScores = getCustomScores();
+            const blacklistLower = blacklistNames.map(name => name.toLowerCase());
 
-            document.getElementById('count-games').innerText = games.length;
-            document.getElementById('count-anime').innerText = anime.length;
-            document.getElementById('count-manga').innerText = manga.length;
+            // 2. Procesamos la base de datos FILTRANDO la blacklist primero
+            database = [...games.map(i => ({ ...i, type: 'game' })),
+            ...anime.map(i => ({ ...i, type: 'anime' })),
+            ...manga.map(i => ({ ...i, type: 'manga' }))]
+                .filter(item => !blacklistLower.includes(item.title.toLowerCase())) // <--- EL FILTRO
+                .map(item => ({
+                    ...item,
+                    score: customScores[item.url] !== undefined ? customScores[item.url] : (parseFloat(item.score) || 0)
+                }));
 
+            // 3. Actualizamos contadores (solo con lo que NO está blacklisteado)
+            document.getElementById('count-games').innerText = database.filter(i => i.type === 'game').length;
+            document.getElementById('count-anime').innerText = database.filter(i => i.type === 'anime').length;
+            document.getElementById('count-manga').innerText = database.filter(i => i.type === 'manga').length;
+
+            // 4. Procesamos Favoritos
             const favItems = favNames.map(name => {
-                const lowerName = name.toLowerCase();
-                const matches = database.filter(item => item.title.toLowerCase() === lowerName);
+                const matches = database.filter(item => item.title.toLowerCase() === name.toLowerCase());
                 return matches.length > 0 ? matches.sort((a, b) => b.score - a.score)[0] : null;
             }).filter(Boolean);
 
             render(favItems, 'favorites-grid', true);
+
+            // 5. Filtramos los favoritos de la lista general
             const chosenFavTitles = favItems.map(f => f.title.toLowerCase());
             filteredList = database.filter(item => !chosenFavTitles.includes(item.title.toLowerCase()));
+
             update();
         }
 
         function render(data, containerId, isFav) {
-            const container = document.getElementById(containerId);
-            container.innerHTML = data.map((item, i) => {
-                const validDate = item.finishDate && item.finishDate !== "0000-00-00";
+            document.getElementById(containerId).innerHTML = data.map((item, i) => {
+                const safeId = btoa(item.url).substring(0, 15).replace(/[^a-zA-Z]/g, 'x') + i;
+                let buttons = "";
+                for (let n = 1; n <= 10; n++) {
+                    const isCurrent = Math.round(item.score) === n;
+                    buttons += `<button class="btn-rate ${isCurrent ? 'current' : ''}" onclick="applyScore(event, '${item.url}', ${n})">${n}</button>`;
+                }
+
                 return `
-                <a href="${item.url || '#'}" target="_blank" class="item-card ${isFav ? 'fav-card' : 'tile'} animate-in" 
-                   style="animation-delay: ${isFav ? i * 0.1 : i * 0.015}s">
+                <div class="item-card ${isFav ? 'fav-card' : 'tile'} animate-in" style="animation-delay: ${isFav ? i * 0.1 : i * 0.015}s">
                     ${isFav ? `<div class="rank-tag">#${(i + 1).toString().padStart(2, '0')}</div>` : ''}
-                    <div class="score-hexagon"><span class="score-val">${item.score > 0 ? item.score : '--'}</span></div>
-                    <img src="${item.image}" alt="${item.title}" loading="lazy">
-                    ${isFav ? '<div class="light-mask"></div>' : ''}
-                    <div class="title-container">${formatTitle(item.title)}</div>
-                    ${validDate ? `<div class="finish-date">${item.finishDate}</div>` : ''}
-                </a>
-            `}).join('');
+                    
+                    <div class="rating-popover" id="pop-${safeId}">
+                        ${buttons}
+                        <button class="btn-rate btn-reset" onclick="applyScore(event, '${item.url}', null)"><i class="fa-solid fa-rotate-left"></i></button>
+                    </div>
+
+                    <div class="score-hexagon" onclick="toggleRatingMenu(event, '${safeId}')">
+                        <span class="score-val">${item.score > 0 ? (Number.isInteger(item.score) ? item.score : item.score.toFixed(1)) : '--'}</span>
+                    </div>
+
+                    <a href="${item.url || '#'}" target="_blank" class="card-link">
+                        <img src="${item.image}" alt="${item.title}" loading="lazy">
+                        <div class="title-container">${formatTitle(item.title)}</div>
+                        ${item.finishDate ? `<div class="finish-date">${item.finishDate}</div>` : ''}
+                    </a>
+                </div>`;
+            }).join('');
         }
 
         function handleSearch(v) { searchQuery = v.toLowerCase(); update(); }
+
         function setFilter(t, b) {
-            document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
+            document.querySelectorAll('.filter-nav .filter-btn').forEach(x => x.classList.remove('active'));
             b.classList.add('active'); currentFilter = t; update();
         }
+
         function toggleDir() {
             sortAsc = !sortAsc;
             document.getElementById('dir-icon').className = sortAsc ? "fa-solid fa-arrow-down-short-wide" : "fa-solid fa-arrow-up-wide-short";
             update();
         }
+
         function update() {
             const key = document.getElementById('sort-key').value;
             let res = [...filteredList];
@@ -149,11 +205,13 @@
             if (searchQuery) res = res.filter(i => i.title.toLowerCase().includes(searchQuery));
             res.sort((a, b) => {
                 let valA = a[key] || ""; let valB = b[key] || "";
+                if (key === 'score') { valA = parseFloat(valA); valB = parseFloat(valB); }
                 if (typeof valA === 'string') return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
                 return sortAsc ? valA - valB : valB - valA;
             });
             render(res, 'main-grid', false);
         }
+
         window.onload = init;
     </script>
 </body>

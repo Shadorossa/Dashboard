@@ -1,90 +1,108 @@
-import asyncio
 import json
-import re
-import inspect
-from playwright.async_api import async_playwright
-from bs4 import BeautifulSoup
+import glob
+import os
+from datetime import datetime
 
-# --- REPARACIÓN QUIRÚRGICA DE IMPORTACIÓN ---
-try:
-    import playwright_stealth
-    # Buscamos la función 'stealth' o 'Stealth' dentro del módulo
-    if hasattr(playwright_stealth, 'stealth'):
-        stealth_func = playwright_stealth.stealth
-    elif hasattr(playwright_stealth, 'Stealth'):
-        stealth_func = playwright_stealth.Stealth
-    else:
-        # Intento de importación profunda desde el archivo stealth.py
-        from playwright_stealth.stealth import Stealth as stealth_func
-except (ImportError, AttributeError):
-    # Último recurso: importación directa
-    from playwright_stealth.stealth import Stealth as stealth_func
-
-# --- CONFIGURACIÓN ---
-USERNAME = 'TuUsuarioDeBackloggd'  # <--- CAMBIA ESTO
-BASE_URL = f"https://www.backloggd.com/u/{USERNAME}/games/release?type=played"
-
-async def fetch_games():
-    async with async_playwright() as p:
-        print(f"Iniciando navegador ultra-stealth para: {USERNAME}...")
-        
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
-            viewport={'width': 1920, 'height': 1080}
-        )
-        
-        page = await context.new_page()
-        
-        # Ejecutamos la función de sigilo detectada
-        if inspect.iscoroutinefunction(stealth_func):
-            await stealth_func(page)
-        else:
-            stealth_func(page)
-        
+def normalize_date(date_str):
+    """
+    Transforma formatos como 'Oct 19 2024' o 'oct 19 2024' 
+    en el estándar '2024-10-19' (Año-Mes-Día).
+    """
+    if not date_str or not isinstance(date_str, str) or date_str.strip() == "":
+        return "", datetime.min
+    
+    parts = date_str.strip().split()
+    # Esperamos 3 partes: Mes, Día, Año
+    if len(parts) == 3:
         try:
-            print(f"Navegando a {BASE_URL}...")
-            await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
-            await asyncio.sleep(6) # Tiempo para Cloudflare
+            # Normalizar el mes (primera mayúscula)
+            month = parts[0].capitalize()
+            day = parts[1]
+            year = parts[2]
             
-            content = await page.content()
-            soup = BeautifulSoup(content, 'html.parser')
+            # Formato de entrada: 'Oct 19 2024'
+            input_str = f"{month} {day} {year}"
+            dt = datetime.strptime(input_str, "%b %d %Y")
             
-            game_cards = soup.select('.game-cover-wrapper')
-            print(f"Analizando {len(game_cards)} posibles juegos encontrados...")
-            
-            games_data = []
-            for card in game_cards:
-                img_tag = card.find('img')
-                title = img_tag['alt'] if img_tag else "Unknown"
-                img_url = img_tag['src'] if img_tag else ""
-                link_tag = card.find_parent('a')
-                full_url = f"https://www.backloggd.com{link_tag['href']}" if link_tag else "#"
+            # Formato de salida: '2024-10-19'
+            iso_date = dt.strftime("%Y-%m-%d")
+            return iso_date, dt
+        except Exception:
+            # Si falla el parseo, devolvemos la cadena original para no perder datos
+            return date_str, datetime.min
+    else:
+        # Si ya está en formato YYYY-MM-DD o es desconocido
+        try:
+            dt = datetime.strptime(date_str, "%Y-%m-%d")
+            return date_str, dt
+        except:
+            return date_str, datetime.min
 
-                # Nota calculada por ancho de estrellas
-                score = 0
-                star_div = card.select_one('.stars-top')
-                if star_div and 'style' in star_div.attrs:
-                    match = re.search(r'width:\s*(\d+)%', star_div['style'])
-                    if match:
-                        score = round(int(match.group(1)) / 10, 1)
+def unificar_archivos():
+    # 1. Detectar directorio donde se encuentra el script
+    directorio_actual = os.path.dirname(os.path.abspath(__file__))
+    patron = os.path.join(directorio_actual, "games*.json")
+    archivos = glob.glob(patron)
+    
+    if not archivos:
+        print(f"Error: No se encontraron archivos 'games*.json' en: {directorio_actual}")
+        return
 
-                games_data.append({
-                    "title": title, "image": img_url, "type": "game",
-                    "score": score, "url": full_url, "finishDate": "2026-01-01" 
-                })
-
-            if games_data:
-                print(f"Éxito: {len(games_data)} juegos guardados en data/games.json")
-                with open('data/games.json', 'w', encoding='utf-8') as f:
-                    json.dump(games_data, f, indent=4, ensure_ascii=False)
-            else:
-                print("Error: El navegador no detectó juegos.")
-
+    lista_maestra = []
+    
+    # 2. Cargar datos de todos los archivos encontrados
+    for ruta_archivo in archivos:
+        try:
+            with open(ruta_archivo, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    lista_maestra.extend(data)
+                    print(f"✔ Cargados {len(data)} juegos de {os.path.basename(ruta_archivo)}")
         except Exception as e:
-            print(f"Error crítico: {e}")
-        finally:
-            await browser.close()
+            print(f"✘ Error al leer {os.path.basename(ruta_archivo)}: {e}")
+
+    # 3. Procesar fechas y eliminar duplicados por URL
+    dict_unicos = {}
+    for juego in lista_maestra:
+        url = juego.get('url')
+        if not url: continue
+        
+        # Aplicar el nuevo formato Año-Mes-Día
+        raw_date = juego.get('finishDate', '')
+        fixed_date_str, dt_obj = normalize_date(raw_date)
+        juego['finishDate'] = fixed_date_str
+        juego['_dt_sort'] = dt_obj # Atributo auxiliar para ordenar
+
+        if url not in dict_unicos:
+            dict_unicos[url] = juego
+        else:
+            # Si el juego está repetido, priorizamos la entrada que tenga fecha válida
+            if dict_unicos[url]['_dt_sort'] == datetime.min and dt_obj > datetime.min:
+                dict_unicos[url] = juego
+
+    # 4. Ordenar cronológicamente (más recientes primero)
+    resultado_final = list(dict_unicos.values())
+    resultado_final.sort(key=lambda x: x['_dt_sort'], reverse=True)
+
+    # Eliminar el atributo auxiliar antes de guardar
+    for j in resultado_final:
+        j.pop('_dt_sort', None)
+
+    # 5. Guardar el resultado en Dashboard/data/games.json
+    ruta_proyecto = os.path.dirname(directorio_actual)
+    ruta_salida_carpeta = os.path.join(ruta_proyecto, "data")
+    ruta_salida_archivo = os.path.join(ruta_salida_carpeta, "games.json")
+
+    os.makedirs(ruta_salida_carpeta, exist_ok=True)
+
+    with open(ruta_salida_archivo, 'w', encoding='utf-8') as f:
+        json.dump(resultado_final, f, indent=4, ensure_ascii=False)
+
+    print("-" * 40)
+    print(f"PROCESO TERMINADO")
+    print(f"Juegos únicos finales: {len(resultado_final)}")
+    print(f"Formato aplicado: Año-Mes-Día (YYYY-MM-DD)")
+    print(f"Archivo guardado en: {ruta_salida_archivo}")
 
 if __name__ == "__main__":
-    asyncio.run(fetch_games())
+    unificar_archivos()

@@ -1,3 +1,6 @@
+/* ==========================================================================
+   CONFIGURACIÓN CORE & VARIABLES
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
@@ -13,7 +16,7 @@
     --transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* ESCALADO PROPORCIONAL */
+/* ESCALADO RESPONSIVO */
 html {
     font-size: 15px;
 }
@@ -51,7 +54,7 @@ body {
     padding: 2rem 1.5rem;
 }
 
-/* ANIMACIONES */
+/* ANIMACIÓN DE ENTRADA */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -68,7 +71,9 @@ body {
     animation: fadeInUp 0.5s cubic-bezier(0.2, 1, 0.3, 1) both;
 }
 
-/* HEADER */
+/* ==========================================================================
+   HEADER & PERFIL
+   ========================================================================== */
 .profile-box {
     display: flex;
     background: var(--card-bg);
@@ -114,7 +119,9 @@ body {
     margin-right: 6px;
 }
 
-/* CONTROLES */
+/* ==========================================================================
+   CONTROLES (BUSCADOR & FILTROS)
+   ========================================================================== */
 .controls-row {
     display: flex;
     flex-wrap: nowrap;
@@ -211,7 +218,9 @@ body {
     transition: 0.3s;
 }
 
-/* GRID */
+/* ==========================================================================
+   GRIDS Y TARJETAS (CARDS)
+   ========================================================================== */
 .fav-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -231,12 +240,19 @@ body {
     border: 1px solid var(--border);
     border-radius: var(--round);
     transition: var(--transition);
-    cursor: pointer;
     display: block;
     text-decoration: none;
-    overflow: hidden;
+    /* CAMBIO CLAVE: Cambiado de hidden a visible para mostrar el popover */
+    overflow: visible;
     opacity: 0;
     will-change: transform, opacity;
+    z-index: 1;
+}
+
+/* Elevamos la tarjeta en hover o cuando el popover está activo para que no quede detrás de otras */
+.item-card:hover,
+.item-card:has(.rating-popover.active) {
+    z-index: 100;
 }
 
 .item-card.fav-card {
@@ -254,6 +270,8 @@ body {
     opacity: 0.85;
     border-radius: var(--round);
     transition: var(--transition);
+    /* Aseguramos que la imagen no se salga si no hay overflow hidden */
+    display: block;
 }
 
 .item-card:hover img {
@@ -262,34 +280,20 @@ body {
     transform: scale(1.05);
 }
 
-/* FECHA DE FINALIZACIÓN (HORIZONTAL Y CENTRADA) */
-.finish-date {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
+/* LINK INTERNO */
+.card-link {
+    display: block;
     width: 100%;
-    /* Ocupa todo el ancho para centrar sin transform */
-    text-align: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--text-dim);
-    opacity: 0.6;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    /* Evita saltos de línea */
-    z-index: 10;
-    letter-spacing: 1px;
-    pointer-events: none;
-    transition: var(--transition);
+    height: 100%;
+    text-decoration: none;
+    z-index: 5;
 }
 
-.item-card:hover .finish-date {
-    opacity: 1;
-    color: var(--text-main);
-}
+/* ==========================================================================
+   SISTEMA DE NOTAS & SELECTOR
+   ========================================================================== */
 
-/* SCORE HEXAGON */
+/* HEXÁGONO NOTA */
 .score-hexagon {
     position: absolute;
     top: -10px;
@@ -304,7 +308,9 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 5px;
-    z-index: 20;
+    z-index: 50;
+    cursor: pointer;
+    pointer-events: auto;
     transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -312,7 +318,7 @@ body {
     top: -12px;
     background: var(--gold);
     border-color: var(--gold);
-    filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.8));
+    filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.6));
 }
 
 .score-val {
@@ -320,16 +326,98 @@ body {
     font-weight: 700;
     font-size: 0.85rem;
     font-family: 'JetBrains Mono', monospace;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     line-height: 1;
 }
 
 .item-card:hover .score-val {
-    color: #0a0a0a;
-    text-shadow: none;
+    color: #000;
 }
 
-/* TITULOS */
+/* BARRA DE SELECCIÓN HORIZONTAL (POPOVER) */
+.rating-popover {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    display: flex;
+    gap: 2px;
+    padding: 6px 10px;
+    z-index: 200;
+    /* Por encima de todo */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.9);
+}
+
+.rating-popover.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.btn-rate {
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.btn-rate:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.btn-rate.current {
+    background: var(--gold);
+    color: #000;
+    font-weight: 700;
+}
+
+.btn-reset {
+    border-left: 1px solid var(--border);
+    margin-left: 4px;
+    padding-left: 8px;
+    color: #ff4444;
+}
+
+/* ==========================================================================
+   FECHA Y TÍTULOS
+   ========================================================================== */
+.finish-date {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: #f0f0f0;
+    opacity: 0.3;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.item-card:hover .finish-date {
+    opacity: 0.99;
+}
+
 .title-container {
     position: absolute;
     top: 50%;
@@ -368,7 +456,9 @@ body {
     text-transform: uppercase;
 }
 
-/* CORE EFFECT */
+/* ==========================================================================
+   ESTÉTICA FAVORITOS
+   ========================================================================== */
 @keyframes internalSweep {
     from {
         transform: translateX(-150%) skewX(-25deg);
