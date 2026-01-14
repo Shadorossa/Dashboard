@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archive // Shadorossa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -13,35 +12,26 @@
 
     <div class="wrapper">
         <header class="profile-box animate-in">
-            <img src="img/avatar.png" class="avatar-sq" alt="Profile"
-                onerror="this.src='https://via.placeholder.com/130?text=S'">
+            <img src="img/avatar.png" class="avatar-sq" alt="Profile">
             <div class="profile-info">
                 <h1>SHADOROSSA</h1>
                 <div class="stats-container">
-                    <div class="stat-item" title="Juegos jugados">
-                        <i class="fa-solid fa-gamepad"></i>
-                        <span id="count-games" class="stat-val">0</span>
-                    </div>
-                    <div class="stat-item" title="Animes completados">
-                        <i class="fa-solid fa-tv"></i>
-                        <span id="count-anime" class="stat-val">0</span>
-                    </div>
-                    <div class="stat-item" title="Mangas leídos">
-                        <i class="fa-solid fa-book-open"></i>
-                        <span id="count-manga" class="stat-val">0</span>
-                    </div>
+                    <div class="stat-item" title="Juegos"><i class="fa-solid fa-gamepad"></i> <span id="count-games"
+                            class="stat-val">0</span></div>
+                    <div class="stat-item" title="Anime"><i class="fa-solid fa-tv"></i> <span id="count-anime"
+                            class="stat-val">0</span></div>
+                    <div class="stat-item" title="Manga"><i class="fa-solid fa-book-open"></i> <span id="count-manga"
+                            class="stat-val">0</span></div>
                 </div>
             </div>
         </header>
 
-        <div class="category-divider">
-            <span class="category-label">Shadorossa's Core</span>
+        <div class="category-divider"><span class="category-label">Shadorossa's Core</span>
             <div class="line-fragment"></div>
         </div>
         <section id="favorites-grid" class="fav-grid"></section>
 
-        <div class="category-divider">
-            <span class="category-label">Obras</span>
+        <div class="category-divider"><span class="category-label">Obras</span>
             <div class="line-fragment"></div>
         </div>
 
@@ -53,28 +43,24 @@
             </div>
 
             <nav class="filter-nav">
-                <button class="filter-btn active" title="Todo" onclick="setFilter('all', this)">
-                    <i class="fa-solid fa-layer-group"></i>
-                </button>
-                <button class="filter-btn" title="Juegos" onclick="setFilter('game', this)">
-                    <i class="fa-solid fa-gamepad"></i>
-                </button>
-                <button class="filter-btn" title="Anime" onclick="setFilter('anime', this)">
-                    <i class="fa-solid fa-tv"></i>
-                </button>
-                <button class="filter-btn" title="Manga" onclick="setFilter('manga', this)">
-                    <i class="fa-solid fa-book-open"></i>
-                </button>
+                <button class="filter-btn active" title="Todo" onclick="setFilter('all', this)"><i
+                        class="fa-solid fa-layer-group"></i></button>
+                <button class="filter-btn" title="Juegos" onclick="setFilter('game', this)"><i
+                        class="fa-solid fa-gamepad"></i></button>
+                <button class="filter-btn" title="Anime" onclick="setFilter('anime', this)"><i
+                        class="fa-solid fa-tv"></i></button>
+                <button class="filter-btn" title="Manga" onclick="setFilter('manga', this)"><i
+                        class="fa-solid fa-book-open"></i></button>
             </nav>
 
             <div class="sort-group">
                 <select class="sort-select" id="sort-key" onchange="update()">
                     <option value="title">TITLE</option>
                     <option value="score">SCORE</option>
+                    <option value="finishDate">FINISH DATE</option>
                 </select>
-                <button class="dir-btn" title="Cambiar dirección" onclick="toggleDir()">
-                    <i class="fa-solid fa-arrow-down-short-wide" id="dir-icon"></i>
-                </button>
+                <button class="dir-btn" onclick="toggleDir()"><i class="fa-solid fa-arrow-down-short-wide"
+                        id="dir-icon"></i></button>
             </div>
         </div>
 
@@ -88,27 +74,14 @@
         let searchQuery = '';
         let sortAsc = true;
 
-        // --- MOTOR DE TÍTULOS INTELIGENTE ---
         function formatTitle(title) {
-            let main = title;
-            let sub = "";
-
-            // 1. Prioridad: Separador por dos puntos (Ej: Bleach: Sennen...)
+            let main = title; let sub = "";
             if (title.includes(": ")) {
-                const parts = title.split(": ");
-                main = parts[0];
-                sub = parts.slice(1).join(": ");
-            }
-            // 2. Prioridad: Temporadas o números finales (Ej: Boku no Hero 2)
-            else {
+                const parts = title.split(": "); main = parts[0]; sub = parts.slice(1).join(": ");
+            } else {
                 const regex = /^(.*?)(\s(?:Season\s\d+|Part\s\d+|Vol\s\d+|\d+(?:st|nd|rd|th)\sSeason|\d+))$/i;
                 const match = title.match(regex);
-
-                // Verificamos que no rompa palabras con guion (Ej: B-Daman)
-                if (match && !match[2].trim().includes('-')) {
-                    main = match[1];
-                    sub = match[2];
-                }
+                if (match && !match[2].trim().includes('-')) { main = match[1]; sub = match[2]; }
             }
             return `<span class="main-title">${main.trim()}</span>${sub ? `<span class="sub-title">${sub.trim()}</span>` : ''}`;
         }
@@ -116,10 +89,8 @@
         async function init() {
             const fetchJSON = p => fetch(p).then(r => r.ok ? r.json() : []);
             const [games, anime, manga, favNames] = await Promise.all([
-                fetchJSON('data/games.json'),
-                fetchJSON('data/anime.json'),
-                fetchJSON('data/manga.json'),
-                fetchJSON('data/favorites.json')
+                fetchJSON('data/games.json'), fetchJSON('data/anime.json'),
+                fetchJSON('data/manga.json'), fetchJSON('data/favorites.json')
             ]);
 
             database = [
@@ -128,95 +99,61 @@
                 ...manga.map(i => ({ ...i, type: 'manga', score: parseFloat(i.score) || 0 }))
             ];
 
-            // Actualizar contadores del header
             document.getElementById('count-games').innerText = games.length;
             document.getElementById('count-anime').innerText = anime.length;
             document.getElementById('count-manga').innerText = manga.length;
 
-            // Lógica de Favoritos (Orden Estricto del JSON + Selección de Mejor Versión)
             const favItems = favNames.map(name => {
                 const lowerName = name.toLowerCase();
                 const matches = database.filter(item => item.title.toLowerCase() === lowerName);
-                // Si hay varias versiones (anime/manga), coge la de mayor nota
                 return matches.length > 0 ? matches.sort((a, b) => b.score - a.score)[0] : null;
             }).filter(Boolean);
 
             render(favItems, 'favorites-grid', true);
-
-            // Lista general (Excluye lo que ya está en favoritos)
             const chosenFavTitles = favItems.map(f => f.title.toLowerCase());
             filteredList = database.filter(item => !chosenFavTitles.includes(item.title.toLowerCase()));
-
             update();
         }
 
         function render(data, containerId, isFav) {
             const container = document.getElementById(containerId);
-
-            // Limpiamos el contenido para reiniciar las animaciones
-            container.innerHTML = "";
-
-            const html = data.map((item, i) => {
-                // Limitamos el delay máximo para evitar parpadeos en listas largas
-                const delay = isFav ? i * 0.1 : Math.min(i * 0.015, 0.5);
-
+            container.innerHTML = data.map((item, i) => {
+                const validDate = item.finishDate && item.finishDate !== "0000-00-00";
                 return `
-            <a href="${item.url || '#'}" target="_blank" 
-               class="item-card ${isFav ? 'fav-card' : 'tile'} animate-in" 
-               style="animation-delay: ${delay}s">
-                ${isFav ? `<div class="rank-tag">#${(i + 1).toString().padStart(2, '0')}</div>` : ''}
-                <div class="score-hexagon">
-                    <span class="score-val">${item.score > 0 ? item.score : '--'}</span>
-                </div>
-                <img src="${item.image}" alt="${item.title}" loading="lazy">
-                ${isFav ? '<div class="light-mask"></div>' : ''}
-                <div class="title-container">${formatTitle(item.title)}</div>
-            </a>
-        `;
-            }).join('');
-
-            container.innerHTML = html;
+                <a href="${item.url || '#'}" target="_blank" class="item-card ${isFav ? 'fav-card' : 'tile'} animate-in" 
+                   style="animation-delay: ${isFav ? i * 0.1 : i * 0.015}s">
+                    ${isFav ? `<div class="rank-tag">#${(i + 1).toString().padStart(2, '0')}</div>` : ''}
+                    <div class="score-hexagon"><span class="score-val">${item.score > 0 ? item.score : '--'}</span></div>
+                    <img src="${item.image}" alt="${item.title}" loading="lazy">
+                    ${isFav ? '<div class="light-mask"></div>' : ''}
+                    <div class="title-container">${formatTitle(item.title)}</div>
+                    ${validDate ? `<div class="finish-date">${item.finishDate}</div>` : ''}
+                </a>
+            `}).join('');
         }
 
         function handleSearch(v) { searchQuery = v.toLowerCase(); update(); }
-
         function setFilter(t, b) {
             document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
-            b.classList.add('active');
-            currentFilter = t;
-            update();
+            b.classList.add('active'); currentFilter = t; update();
         }
-
         function toggleDir() {
             sortAsc = !sortAsc;
-            document.getElementById('dir-icon').className = sortAsc
-                ? "fa-solid fa-arrow-down-short-wide"
-                : "fa-solid fa-arrow-up-wide-short";
+            document.getElementById('dir-icon').className = sortAsc ? "fa-solid fa-arrow-down-short-wide" : "fa-solid fa-arrow-up-wide-short";
             update();
         }
-
         function update() {
             const key = document.getElementById('sort-key').value;
             let res = [...filteredList];
-
-            // Filtrado por categoría
             if (currentFilter !== 'all') res = res.filter(i => i.type === currentFilter);
-
-            // Filtrado por búsqueda
             if (searchQuery) res = res.filter(i => i.title.toLowerCase().includes(searchQuery));
-
-            // Ordenado
             res.sort((a, b) => {
-                let valA = a[key], valB = b[key];
-                if (typeof valA === 'string') {
-                    return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
-                }
+                let valA = a[key] || ""; let valB = b[key] || "";
+                if (typeof valA === 'string') return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
                 return sortAsc ? valA - valB : valB - valA;
             });
-
             render(res, 'main-grid', false);
         }
-
         window.onload = init;
     </script>
 </body>

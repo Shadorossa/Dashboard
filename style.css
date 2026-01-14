@@ -2,9 +2,7 @@
 
 :root {
     --bg: #0d0d0d;
-    /* Negro Mate Profundo */
     --card-bg: #141414;
-    /* Slate Matte */
     --border: #222;
     --text-main: #e5e5e5;
     --text-dim: #555;
@@ -15,7 +13,7 @@
     --transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* SISTEMA DE ESCALADO PROPORCIONAL */
+/* ESCALADO PROPORCIONAL */
 html {
     font-size: 15px;
 }
@@ -66,30 +64,11 @@ body {
     }
 }
 
-/* 2. Estado inicial de la tarjeta (IMPORTANTE: invisible por defecto) */
-.item-card {
-    position: relative;
-    background: #000;
-    border: 1px solid var(--border);
-    border-radius: var(--round);
-    transition: var(--transition);
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
-    overflow: visible;
-
-    opacity: 0;
-    /* Fuerza a que no se vea nada hasta que empiece la animación */
-    will-change: transform, opacity;
-    /* Prepara a la GPU */
-}
-
-/* 3. Clase de animación con fill-mode: both */
 .animate-in {
     animation: fadeInUp 0.5s cubic-bezier(0.2, 1, 0.3, 1) both;
 }
 
-/* HEADER COMPACTO */
+/* HEADER */
 .profile-box {
     display: flex;
     background: var(--card-bg);
@@ -135,10 +114,9 @@ body {
     margin-right: 6px;
 }
 
-/* CONTROLES (Horizontal & Matte Style) */
+/* CONTROLES */
 .controls-row {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     gap: 1.2rem;
@@ -200,7 +178,6 @@ body {
     background: #111;
 }
 
-/* ORDENADO Y DIRECCIÓN */
 .sort-group {
     display: flex;
     align-items: center;
@@ -216,13 +193,8 @@ body {
     font-size: 0.75rem;
     border-radius: 6px;
     cursor: pointer;
-    appearance: none;
     outline: none;
-    transition: 0.3s;
-}
-
-.sort-select:hover {
-    border-color: #444;
+    appearance: none;
 }
 
 .dir-btn {
@@ -239,12 +211,7 @@ body {
     transition: 0.3s;
 }
 
-.dir-btn:hover {
-    border-color: var(--gold);
-    color: var(--gold);
-}
-
-/* GRID FAVORITOS (PRISMAS) */
+/* GRID */
 .fav-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -252,49 +219,77 @@ body {
     margin-bottom: 5rem;
 }
 
-.fav-card {
-    aspect-ratio: 1 / 2.4;
+.general-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+    gap: 1rem;
+}
+
+.item-card {
     position: relative;
     background: #000;
     border: 1px solid var(--border);
     border-radius: var(--round);
+    transition: var(--transition);
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
     overflow: hidden;
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.item-card.fav-card {
+    aspect-ratio: 1 / 2.4;
+}
+
+.item-card.tile {
+    aspect-ratio: 2 / 3;
+}
+
+.item-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    border-radius: var(--round);
     transition: var(--transition);
 }
 
-.fav-card:hover {
-    transform: translateY(-8px);
-    border-color: #444;
+.item-card:hover img {
+    opacity: 0.15;
+    filter: blur(6px);
+    transform: scale(1.05);
 }
 
-/* MÁSCARA BRILLO INTERNA */
-@keyframes internalSweep {
-    from {
-        transform: translateX(-150%) skewX(-25deg);
-    }
-
-    to {
-        transform: translateX(150%) skewX(-25deg);
-    }
-}
-
-.light-mask {
+/* FECHA DE FINALIZACIÓN (HORIZONTAL Y CENTRADA) */
+.finish-date {
     position: absolute;
-    top: 0;
+    bottom: 10px;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
-    transform: translateX(-150%) skewX(-25deg);
+    /* Ocupa todo el ancho para centrar sin transform */
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    opacity: 0.6;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    /* Evita saltos de línea */
+    z-index: 10;
+    letter-spacing: 1px;
     pointer-events: none;
-    z-index: 5;
+    transition: var(--transition);
 }
 
-.fav-card:hover .light-mask {
-    animation: internalSweep 0.8s ease-in-out;
+.item-card:hover .finish-date {
+    opacity: 1;
+    color: var(--text-main);
 }
 
-/* HEXÁGONO NOTA (LIMPIO Y CENTRADO) */
+/* SCORE HEXAGON */
 .score-hexagon {
     position: absolute;
     top: -10px;
@@ -303,14 +298,12 @@ body {
     width: 2.2rem;
     height: 2.5rem;
     background: #111;
-    /* Fondo sólido para evitar bordes sucios de blur */
     border: 1px solid rgba(255, 255, 255, 0.15);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 4px;
-    /* Baja el número visualmente */
+    padding-top: 5px;
     z-index: 20;
     transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -328,8 +321,6 @@ body {
     font-size: 0.85rem;
     font-family: 'JetBrains Mono', monospace;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
-    margin: 0;
     line-height: 1;
 }
 
@@ -338,7 +329,7 @@ body {
     text-shadow: none;
 }
 
-/* TÍTULOS PROTEGIDOS */
+/* TITULOS */
 .title-container {
     position: absolute;
     top: 50%;
@@ -351,7 +342,6 @@ body {
     transition: var(--transition);
     pointer-events: none;
     word-break: keep-all;
-    /* Evita que B-Daman se rompa */
     overflow-wrap: break-word;
 }
 
@@ -378,7 +368,33 @@ body {
     text-transform: uppercase;
 }
 
-/* RANKING */
+/* CORE EFFECT */
+@keyframes internalSweep {
+    from {
+        transform: translateX(-150%) skewX(-25deg);
+    }
+
+    to {
+        transform: translateX(150%) skewX(-25deg);
+    }
+}
+
+.light-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+    transform: translateX(-150%) skewX(-25deg);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.fav-card:hover .light-mask {
+    animation: internalSweep 0.8s ease-in-out;
+}
+
 .rank-tag {
     position: absolute;
     top: 12px;
@@ -408,38 +424,6 @@ body {
     color: var(--bronze);
 }
 
-/* GRID GENERAL MÁS DENSO */
-.general-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
-    gap: 1rem;
-}
-
-.tile {
-    aspect-ratio: 2 / 3;
-    border: 1px solid var(--border);
-    border-radius: var(--round);
-    overflow: hidden;
-    position: relative;
-    transition: var(--transition);
-}
-
-.item-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.85;
-    border-radius: var(--round);
-    transition: var(--transition);
-}
-
-.item-card:hover img {
-    opacity: 0.2;
-    filter: blur(5px);
-    transform: scale(1.05);
-}
-
-/* SEPARADORES */
 .category-divider {
     display: flex;
     align-items: center;

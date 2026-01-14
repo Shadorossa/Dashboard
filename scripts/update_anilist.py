@@ -5,6 +5,14 @@ import os
 USER = "Shadorossa"
 URL = 'https://graphql.anilist.co'
 
+def format_date(date_obj):
+    if not date_obj or not date_obj.get('year'):
+        return "0000-00-00"
+    y = date_obj.get('year')
+    m = date_obj.get('month') or 1
+    d = date_obj.get('day') or 1
+    return f"{y}-{m:02d}-{d:02d}"
+
 def fetch_anilist(media_type):
     print(f"Sincronizando {media_type} con notas...")
     query = '''
@@ -13,6 +21,7 @@ def fetch_anilist(media_type):
         lists { 
           entries { 
             score(format: POINT_10)
+            completedAt { year month day }
             media { 
               title { romaji } 
               coverImage { large } 
@@ -23,6 +32,7 @@ def fetch_anilist(media_type):
       }
     }
     '''
+
     variables = {'username': USER, 'type': media_type.upper()}
     try:
         response = requests.post(URL, json={'query': query, 'variables': variables})
@@ -38,7 +48,8 @@ def fetch_anilist(media_type):
                         "image": entry['media']['coverImage']['large'],
                         "type": media_type.lower(),
                         "score": entry['score'] if entry['score'] > 0 else 0,
-                        "url": entry['media']['siteUrl'] # <--- AÑADE ESTO
+                        "url": entry['media']['siteUrl'],
+                        "finishDate": format_date(entry['completedAt'])
                     })
                     seen.add(title)
         return results

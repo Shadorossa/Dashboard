@@ -4,713 +4,815 @@
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30003-E84fwIh22LAQ.jpg",
         "type": "manga",
         "score": 9,
-        "url": "https://anilist.co/manga/30003"
+        "url": "https://anilist.co/manga/30003",
+        "finishDate": "2021-05-24"
     },
     {
         "title": "Chainsaw Man",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx105778-euxXZEIfDY2u.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/105778"
+        "url": "https://anilist.co/manga/105778",
+        "finishDate": "2022-02-18"
     },
     {
         "title": "Gintama",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30044-vPmoz3vTPvZs.jpg",
         "type": "manga",
         "score": 10,
-        "url": "https://anilist.co/manga/30044"
+        "url": "https://anilist.co/manga/30044",
+        "finishDate": "2022-07-27"
     },
     {
         "title": "JoJo no Kimyou na Bouken: Stone Ocean",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx33009-jF9dqLJcZC4n.png",
         "type": "manga",
         "score": 6,
-        "url": "https://anilist.co/manga/33009"
+        "url": "https://anilist.co/manga/33009",
+        "finishDate": "2020-07-06"
     },
     {
         "title": "JoJo no Kimyou na Bouken: Steel Ball Run",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31706-lRncu9VbcBB7.png",
         "type": "manga",
         "score": 7,
-        "url": "https://anilist.co/manga/31706"
+        "url": "https://anilist.co/manga/31706",
+        "finishDate": "2020-07-28"
     },
     {
         "title": "Jujutsu Kaisen",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101517-H3TdM3g5ZUe9.jpg",
         "type": "manga",
         "score": 1,
-        "url": "https://anilist.co/manga/101517"
+        "url": "https://anilist.co/manga/101517",
+        "finishDate": "2024-10-01"
     },
     {
         "title": "Nanatsu no Taizai",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx74485-mFbj0sQEcBur.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/74485"
+        "url": "https://anilist.co/manga/74485",
+        "finishDate": "2022-11-24"
     },
     {
         "title": "Pandora Hearts",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx33031-LzNWgqS69qAj.jpg",
         "type": "manga",
         "score": 8,
-        "url": "https://anilist.co/manga/33031"
+        "url": "https://anilist.co/manga/33031",
+        "finishDate": "2022-04-29"
     },
     {
         "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30022-jxTlViun1o10.jpg",
         "type": "manga",
         "score": 6,
-        "url": "https://anilist.co/manga/30022"
+        "url": "https://anilist.co/manga/30022",
+        "finishDate": "2021-12-16"
     },
     {
         "title": "Shingeki no Kyojin",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx53390-1RsuABC34P9D.jpg",
         "type": "manga",
         "score": 4,
-        "url": "https://anilist.co/manga/53390"
+        "url": "https://anilist.co/manga/53390",
+        "finishDate": "2021-04-09"
     },
     {
         "title": "SLAM DUNK",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30051-5KJyPlO7z5F4.png",
         "type": "manga",
         "score": 3,
-        "url": "https://anilist.co/manga/30051"
+        "url": "https://anilist.co/manga/30051",
+        "finishDate": "2022-06-28"
     },
     {
         "title": "Tokyo Ghoul",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx63327-glC9cDxYBja9.png",
         "type": "manga",
         "score": 2,
-        "url": "https://anilist.co/manga/63327"
+        "url": "https://anilist.co/manga/63327",
+        "finishDate": "2022-01-13"
     },
     {
         "title": "Vagabond",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30656-9mW113O7rDnA.png",
         "type": "manga",
         "score": 6,
-        "url": "https://anilist.co/manga/30656"
+        "url": "https://anilist.co/manga/30656",
+        "finishDate": "2022-02-27"
     },
     {
         "title": "Kakegurui Midari",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx106174-SCjlpyZXFzvJ.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/106174"
+        "url": "https://anilist.co/manga/106174",
+        "finishDate": "2021-12-23"
     },
     {
         "title": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86635-EdaLQmsn86Fy.png",
         "type": "manga",
         "score": 6,
-        "url": "https://anilist.co/manga/86635"
+        "url": "https://anilist.co/manga/86635",
+        "finishDate": "2022-11-02"
     },
     {
         "title": "21 Seiki Shounen",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx30743-eln5xX7mt8ps.jpg",
         "type": "manga",
         "score": 6,
-        "url": "https://anilist.co/manga/30743"
+        "url": "https://anilist.co/manga/30743",
+        "finishDate": "0000-00-00"
     },
     {
         "title": "Magi: Sinbad no Bouken",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx78025-RrI7jNnJAGnA.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/78025"
+        "url": "https://anilist.co/manga/78025",
+        "finishDate": "2022-10-03"
     },
     {
         "title": "BLEACH",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30012-1epmVfTSv2rr.png",
         "type": "manga",
         "score": 7,
-        "url": "https://anilist.co/manga/30012"
+        "url": "https://anilist.co/manga/30012",
+        "finishDate": "2021-11-01"
     },
     {
         "title": "Tokyo Ghoul:re",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85611-Asb0BNP23NsJ.png",
         "type": "manga",
         "score": 4,
-        "url": "https://anilist.co/manga/85611"
+        "url": "https://anilist.co/manga/85611",
+        "finishDate": "2023-04-26"
     },
     {
         "title": "Tokyo卍Revengers",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx102988-OoVJxQCH6fbR.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/102988"
+        "url": "https://anilist.co/manga/102988",
+        "finishDate": "2022-11-07"
     },
     {
         "title": "Haikyuu!!",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx65243-mR4MnJFmfaOF.png",
         "type": "manga",
         "score": 6,
-        "url": "https://anilist.co/manga/65243"
+        "url": "https://anilist.co/manga/65243",
+        "finishDate": "2022-03-18"
     },
     {
         "title": "JoJo no Kimyou na Bouken: Phantom Blood",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx31517-Y3pL6OTH74Iq.png",
         "type": "manga",
         "score": 4,
-        "url": "https://anilist.co/manga/31517"
+        "url": "https://anilist.co/manga/31517",
+        "finishDate": "2021-11-22"
     },
     {
         "title": "Innocent",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85165-owwLAkh5RdBr.png",
         "type": "manga",
         "score": 9,
-        "url": "https://anilist.co/manga/85165"
+        "url": "https://anilist.co/manga/85165",
+        "finishDate": "2022-08-09"
     },
     {
         "title": "Innocent Rouge",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87217-IQOLV9sGf91n.jpg",
         "type": "manga",
         "score": 9,
-        "url": "https://anilist.co/manga/87217"
+        "url": "https://anilist.co/manga/87217",
+        "finishDate": "2022-11-30"
     },
     {
         "title": "Imawa no Kuni no Alice",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx63031-lE9pKD3cpmVK.jpg",
         "type": "manga",
         "score": 9,
-        "url": "https://anilist.co/manga/63031"
+        "url": "https://anilist.co/manga/63031",
+        "finishDate": "2023-04-17"
     },
     {
         "title": "Kokou no Hito",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx37375-wkgev4kXhamw.png",
         "type": "manga",
         "score": 2,
-        "url": "https://anilist.co/manga/37375"
+        "url": "https://anilist.co/manga/37375",
+        "finishDate": "2022-12-26"
     },
     {
         "title": "Usogui",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx39982-68LS2Z9075Kw.jpg",
         "type": "manga",
         "score": 10,
-        "url": "https://anilist.co/manga/39982"
+        "url": "https://anilist.co/manga/39982",
+        "finishDate": "2023-08-24"
     },
     {
         "title": "Fire Punch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87170-nyuwcN7rU4pc.jpg",
         "type": "manga",
         "score": 3,
-        "url": "https://anilist.co/manga/87170"
+        "url": "https://anilist.co/manga/87170",
+        "finishDate": "2023-05-22"
     },
     {
         "title": "My Girl",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx36164-s0tdXewGmPd3.png",
         "type": "manga",
         "score": 4,
-        "url": "https://anilist.co/manga/36164"
+        "url": "https://anilist.co/manga/36164",
+        "finishDate": "2024-04-29"
     },
     {
         "title": "BORUTO: NARUTO NEXT GENERATIONS",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87178-CPMk8QdPo7c8.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/87178"
+        "url": "https://anilist.co/manga/87178",
+        "finishDate": "2023-08-23"
     },
     {
         "title": "Yokohama Kaidashi Kikou",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b30004-k0YUnO94IB4x.jpg",
         "type": "manga",
         "score": 8,
-        "url": "https://anilist.co/manga/30004"
+        "url": "https://anilist.co/manga/30004",
+        "finishDate": "2023-10-28"
     },
     {
         "title": "ZETMAN",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31534-HBISOyZgyIqj.jpg",
         "type": "manga",
         "score": 3,
-        "url": "https://anilist.co/manga/31534"
+        "url": "https://anilist.co/manga/31534",
+        "finishDate": "2023-10-22"
     },
     {
         "title": "AQUA",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30124-GgVKXu3km7MH.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/30124"
+        "url": "https://anilist.co/manga/30124",
+        "finishDate": "2024-04-13"
     },
     {
         "title": "DEATH NOTE: Tokubetsu Yomikiri",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx115122-HWsbTNeZyoFD.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/115122"
+        "url": "https://anilist.co/manga/115122",
+        "finishDate": "0000-00-00"
     },
     {
         "title": "DEATH NOTE C-Kira-hen",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx34941-PyMwAPm58T8m.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/34941"
+        "url": "https://anilist.co/manga/34941",
+        "finishDate": "2021-12-23"
     },
     {
         "title": "Look Back",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx136807-KNfQQTRD4HUK.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/136807"
+        "url": "https://anilist.co/manga/136807",
+        "finishDate": "2021-08-05"
     },
     {
         "title": "Hisoka no Kako",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx103186-KchtSwVTCJRg.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/103186"
+        "url": "https://anilist.co/manga/103186",
+        "finishDate": "2021-08-05"
     },
     {
         "title": "Gokurakugai Sanban-doori no Ken",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx115154-12CXd1lQejQm.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/115154"
+        "url": "https://anilist.co/manga/115154",
+        "finishDate": "2021-08-05"
     },
     {
         "title": "Ao no Hako",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx122342-50btLRhAOhsk.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/122342"
+        "url": "https://anilist.co/manga/122342",
+        "finishDate": "2021-11-20"
     },
     {
         "title": "Bankara-san ga Tooru",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx52810-3WdhHxuMYyOz.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/52810"
+        "url": "https://anilist.co/manga/52810",
+        "finishDate": "2022-05-01"
     },
     {
         "title": "FC Barcelona Monogatari",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/9401.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/39401"
+        "url": "https://anilist.co/manga/39401",
+        "finishDate": "2021-08-25"
     },
     {
         "title": "Kushami: Urasawa Naoki Tanpenshuu",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112439-rKkM5MPgWUva.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/112439"
+        "url": "https://anilist.co/manga/112439",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Zelda no Densetsu: Skyward Sword",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx63581-RnB5I1Y1CX5n.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/63581"
+        "url": "https://anilist.co/manga/63581",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "BLEACH Gokumeimeihen",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx137620-iUpSBs33kQOY.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/137620"
+        "url": "https://anilist.co/manga/137620",
+        "finishDate": "2021-11-15"
     },
     {
         "title": "Fujiko no Kimyou na Shoseijutsu: Whitesnake no Gosan",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx141803-UZbIzVpyrRXM.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/141803"
+        "url": "https://anilist.co/manga/141803",
+        "finishDate": "2021-12-23"
     },
     {
         "title": "DAMiYAN!",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/98146-eb17E5p609C3.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/98146"
+        "url": "https://anilist.co/manga/98146",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "ONE PIECE x Toriko",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/25146.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/55146"
+        "url": "https://anilist.co/manga/55146",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "13",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx34836-Zc4SLu0tCWkj.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/34836"
+        "url": "https://anilist.co/manga/34836",
+        "finishDate": "2022-05-01"
     },
     {
         "title": "EVANGELION: 3.0 (-120min.)",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx135927-wdQjHYfOFfIe.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/135927"
+        "url": "https://anilist.co/manga/135927",
+        "finishDate": "2021-12-25"
     },
     {
         "title": "Berserk: Shinen no Kami 2",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx95821-jqolk3XdH4xf.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/95821"
+        "url": "https://anilist.co/manga/95821",
+        "finishDate": "2022-01-23"
     },
     {
         "title": "#DRCL midnight children",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx127157-uMsiMKefIj4o.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/127157"
+        "url": "https://anilist.co/manga/127157",
+        "finishDate": "0000-00-00"
     },
     {
         "title": "ONE PIECE: STRONG WORLD",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/n47152-v3AqgrZH9BsU.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/47152"
+        "url": "https://anilist.co/manga/47152",
+        "finishDate": "2022-04-09"
     },
     {
         "title": "AMONG US",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143690-8DDyMdD7qCT5.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/143690"
+        "url": "https://anilist.co/manga/143690",
+        "finishDate": "2022-04-10"
     },
     {
         "title": "Sayonara Eri",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146983-pLf4apCkFwKL.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/146983"
+        "url": "https://anilist.co/manga/146983",
+        "finishDate": "2022-05-01"
     },
     {
         "title": "NARUTO Gaiden: Uzu no Naka no Tsumujikaze",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx165485-z0LYxfAY88Ff.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/165485"
+        "url": "https://anilist.co/manga/165485",
+        "finishDate": "2023-07-17"
     },
     {
         "title": "HUNTER×HUNTER: Kurapika Tsuioku-hen",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx75996-31xQNNFRBnGy.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/75996"
+        "url": "https://anilist.co/manga/75996",
+        "finishDate": "2021-08-08"
     },
     {
         "title": "20 Seiki Shounen: Ujiko Ujio Sakuhinshuu",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx45691-GZ5F27dNRcHi.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/45691"
+        "url": "https://anilist.co/manga/45691",
+        "finishDate": "2022-05-12"
     },
     {
         "title": "Red Hood",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx135981-Xpm9OrtEHHcq.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/135981"
+        "url": "https://anilist.co/manga/135981",
+        "finishDate": "2021-11-12"
     },
     {
         "title": "1-nichi Go ni Shinu Gorilla",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx129574-knBGx96XqrCR.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/129574"
+        "url": "https://anilist.co/manga/129574",
+        "finishDate": "2021-08-05"
     },
     {
         "title": "My Broken Mariko",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112579-STxOi2dwQmTZ.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/112579"
+        "url": "https://anilist.co/manga/112579",
+        "finishDate": "2021-09-04"
     },
     {
         "title": "Tokyo Ghoul: Jack",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85522-v5vjyUSCTvvl.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/85522"
+        "url": "https://anilist.co/manga/85522",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "not be, but be",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/26133.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/56133"
+        "url": "https://anilist.co/manga/56133",
+        "finishDate": "2021-11-06"
     },
     {
         "title": "Kaguya-sama wa Kokurasetai Darkness",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx126244-VjHVPG4o7T3N.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/126244"
+        "url": "https://anilist.co/manga/126244",
+        "finishDate": "2021-10-11"
     },
     {
         "title": "Suicide Parabellum",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85209-eFgxoVTGXNr6.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/85209"
+        "url": "https://anilist.co/manga/85209",
+        "finishDate": "2021-11-06"
     },
     {
         "title": "Bibliomania",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx126135-63wqdasXoXsD.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/126135"
+        "url": "https://anilist.co/manga/126135",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Megane, Tokidoki, Yankee-kun",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx128448-7EMeQjdXbB2k.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/128448"
+        "url": "https://anilist.co/manga/128448",
+        "finishDate": "2021-11-15"
     },
     {
         "title": "Vagabond: Saigo no Manga-ten",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b135129-rbQyUsPfUZTj.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/135129"
+        "url": "https://anilist.co/manga/135129",
+        "finishDate": "2022-02-27"
     },
     {
         "title": "Supyeongseon",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx100568-4BC0PsdwU4bL.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/100568"
+        "url": "https://anilist.co/manga/100568",
+        "finishDate": "2022-05-01"
     },
     {
         "title": "Itou Junji no Neko Nikki: Yon & Mu",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx47192-6jXGGVX83Lub.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/47192"
+        "url": "https://anilist.co/manga/47192",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Solanin",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx33731-AnTmPqTS2W8C.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/33731"
+        "url": "https://anilist.co/manga/33731",
+        "finishDate": "2021-12-13"
     },
     {
         "title": "WANTED! Oda Eiichiro Tanpenshuu",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30793-Zca4SIWG5j8e.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/30793"
+        "url": "https://anilist.co/manga/30793",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Dr. STONE reboot: Byakuya",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112673-ppxmIwBve158.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/112673"
+        "url": "https://anilist.co/manga/112673",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Hotarubi no Mori e",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx33282-l7Ezv97XFiH0.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/33282"
+        "url": "https://anilist.co/manga/33282",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Boy meets Maria",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx114027-Gnc0xPTUvmrb.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/114027"
+        "url": "https://anilist.co/manga/114027",
+        "finishDate": "2021-12-13"
     },
     {
         "title": "ONE PIECE episode A",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx117802-CsCjUyuG4lSB.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/117802"
+        "url": "https://anilist.co/manga/117802",
+        "finishDate": "2022-04-10"
     },
     {
         "title": "Gon",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31470-FRPB1z4kJtDI.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/31470"
+        "url": "https://anilist.co/manga/31470",
+        "finishDate": "2022-04-28"
     },
     {
         "title": "Omoide Emanon",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx47465-YAPfE2a7LSFB.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/47465"
+        "url": "https://anilist.co/manga/47465",
+        "finishDate": "2023-06-17"
     },
     {
         "title": "Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx97553-vqJj5DFS8v2p.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/97553"
+        "url": "https://anilist.co/manga/97553",
+        "finishDate": "2023-04-20"
     },
     {
         "title": "Koisuru Kiseichuu",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx105768-Vh1iegsU5tJq.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/105768"
+        "url": "https://anilist.co/manga/105768",
+        "finishDate": "2023-04-28"
     },
     {
         "title": "Hoshi Mamoru Inu",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx51467-RusjQiRfJxfr.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/51467"
+        "url": "https://anilist.co/manga/51467",
+        "finishDate": "0000-00-00"
     },
     {
         "title": "Zoku Hoshi Mamoru Inu",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b55245-WVYZBGe3fqn0.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/55245"
+        "url": "https://anilist.co/manga/55245",
+        "finishDate": "0000-00-00"
     },
     {
         "title": "Tomo-chan wa Onnanoko!",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx86300-VQWRaxoTXciF.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/86300"
+        "url": "https://anilist.co/manga/86300",
+        "finishDate": "0000-00-00"
     },
     {
         "title": "METAL GEAR SOLID 2 INSTRUCTION MANGA",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b148141-CbbaVSXJc1de.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/148141"
+        "url": "https://anilist.co/manga/148141",
+        "finishDate": "2023-06-15"
     },
     {
         "title": "Sasurai Emanon",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx66903-EVTKYXNCZR82.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/66903"
+        "url": "https://anilist.co/manga/66903",
+        "finishDate": "2023-06-26"
     },
     {
         "title": "EMANON: Sasurai Emanon Episode: 1",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/31853.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/61853"
+        "url": "https://anilist.co/manga/61853",
+        "finishDate": "2023-06-17"
     },
     {
         "title": "8-gatsu no Soda Sui",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx103065-vzMPzBtIb4dM.png",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/103065"
+        "url": "https://anilist.co/manga/103065",
+        "finishDate": "2023-10-06"
     },
     {
         "title": "Bleach: Spirits Are Forever With You",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx73605-RbkvBQ2yKpBJ.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/73605"
+        "url": "https://anilist.co/manga/73605",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Bleach: The Death Save The Strawberry",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/43607.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/73607"
+        "url": "https://anilist.co/manga/73607",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Bleach: We Do Knot Always Love You",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx117412-tlPEwBSZjTCE.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/117412"
+        "url": "https://anilist.co/manga/117412",
+        "finishDate": "2021-12-11"
     },
     {
         "title": "Bleach: Can't Fear Your Own World",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112709-VmCRFXVQcneJ.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/112709"
+        "url": "https://anilist.co/manga/112709",
+        "finishDate": "2021-11-20"
     },
     {
         "title": "Bleach: The Honey Dish Rhapsody",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/22745.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/52745"
+        "url": "https://anilist.co/manga/52745",
+        "finishDate": "2021-10-21"
     },
     {
         "title": "Bleach: Letters From the Other Side",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx52744-BzCo6emJCA1E.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/52744"
+        "url": "https://anilist.co/manga/52744",
+        "finishDate": "2021-11-15"
     },
     {
         "title": "BLEACH: MEMORIES OF NOBODY",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx141700-4JC9o68f6JlY.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/141700"
+        "url": "https://anilist.co/manga/141700",
+        "finishDate": "2021-11-20"
     },
     {
         "title": "Shousetsu Final Fantasy XV: The Dawn Of The Future",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx131784-JqExO6f2Ka7T.jpg",
         "type": "manga",
         "score": 0,
-        "url": "https://anilist.co/manga/131784"
+        "url": "https://anilist.co/manga/131784",
+        "finishDate": "2022-11-06"
     },
     {
         "title": "Fata Morgana no Yakata: Anata no Genten ni Itaru Monogatari",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110992-ROmqSnw0QDTK.jpg",
         "type": "manga",
         "score": 9,
-        "url": "https://anilist.co/manga/110992"
+        "url": "https://anilist.co/manga/110992",
+        "finishDate": "2023-09-22"
     },
     {
         "title": "Umineko no Naku Koro ni Episode 2: Turn of the Golden Witch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146744-g4Dw9YBoC4Uy.png",
         "type": "manga",
         "score": 6,
-        "url": "https://anilist.co/manga/146744"
+        "url": "https://anilist.co/manga/146744",
+        "finishDate": "2025-01-16"
     },
     {
         "title": "Umineko no Naku Koro ni Episode 1: Legend of the Golden Witch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx102540-E64aMg63pacW.jpg",
         "type": "manga",
         "score": 5,
-        "url": "https://anilist.co/manga/102540"
+        "url": "https://anilist.co/manga/102540",
+        "finishDate": "2025-01-11"
     },
     {
         "title": "Umineko no Naku Koro ni Episode 3: Banquet of the Golden Witch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146745-H15rfXYIzsiw.png",
         "type": "manga",
         "score": 9,
-        "url": "https://anilist.co/manga/146745"
+        "url": "https://anilist.co/manga/146745",
+        "finishDate": "2025-03-10"
     },
     {
         "title": "Umineko no Naku Koro ni Episode 4: Alliance of the Golden Witch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146746-7JwYQSvCMkxl.png",
         "type": "manga",
         "score": 8,
-        "url": "https://anilist.co/manga/146746"
+        "url": "https://anilist.co/manga/146746",
+        "finishDate": "2025-07-13"
     },
     {
         "title": "Umineko no Naku Koro ni Chiru Episode 5: End of the Golden Witch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx92936-Nhy7avArnylj.jpg",
         "type": "manga",
         "score": 10,
-        "url": "https://anilist.co/manga/92936"
+        "url": "https://anilist.co/manga/92936",
+        "finishDate": "2025-07-30"
     },
     {
         "title": "Umineko no Naku Koro ni Chiru Episode 6: Dawn of the Golden Witch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146748-0dNGeJegU32u.png",
         "type": "manga",
         "score": 9,
-        "url": "https://anilist.co/manga/146748"
+        "url": "https://anilist.co/manga/146748",
+        "finishDate": "2025-10-02"
     },
     {
         "title": "Umineko no Naku Koro ni Chiru Episode 7: Requiem of the Golden Witch",
         "image": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146747-nx7R6SqfoZLi.png",
         "type": "manga",
         "score": 10,
-        "url": "https://anilist.co/manga/146747"
+        "url": "https://anilist.co/manga/146747",
+        "finishDate": "2025-10-05"
     }
 ]
