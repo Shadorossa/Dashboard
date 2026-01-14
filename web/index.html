@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadorossa | Timeline de Obras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem; }
+        .poster { aspect-ratio: 2/3; object-fit: cover; border-radius: 8px; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <header class="max-w-6xl mx-auto mb-12 text-center">
+        <h1 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+            Mi Biblioteca Personal
+        </h1>
+        <p class="text-gray-400">Todo lo que he jugado, visto y leído.</p>
+        
+        <div class="flex justify-center gap-4 mt-8 flex-wrap">
+            <button onclick="filterItems('all')" class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full border border-slate-700 transition">Todos</button>
+            <button onclick="filterItems('game')" class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full border border-slate-700 transition"><i class="fas fa-gamepad mr-2"></i>Juegos</button>
+            <button onclick="filterItems('anime')" class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full border border-slate-700 transition"><i class="fas fa-tv mr-2"></i>Anime</button>
+            <button onclick="filterItems('manga')" class="bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-full border border-slate-700 transition"><i class="fas fa-book-open mr-2"></i>Manga</button>
+        </div>
+    </header>
+
+    <main id="gallery" class="max-w-6xl mx-auto grid-container">
+        <div class="col-span-full text-center py-20 text-gray-500">Cargando colección...</div>
+    </main>
+
+    <script>
+        let allData = [];
+
+        // Función para cargar los JSONs
+        async function loadData() {
+            try {
+                // Cargamos los 3 archivos JSON de tu carpeta /data/
+                const [games, anime, manga] = await Promise.all([
+                    fetch('../data/games.json').then(res => res.json()).catch(() => []),
+                    fetch('../data/anime.json').then(res => res.json()).catch(() => []),
+                    fetch('../data/manga.json').then(res => res.json()).catch(() => [])
+                ]);
+
+                // Etiquetamos cada tipo para el filtro
+                const g = games.map(i => ({ ...i, type: 'game' }));
+                const a = anime.map(i => ({ ...i, type: 'anime' }));
+                const m = manga.map(i => ({ ...i, type: 'manga' }));
+
+                allData = [...g, ...a, ...m];
+
+                // Ordenar de menor a mayor (por fecha de completado o título)
+                // Aquí asumo que tus objetos tienen una propiedad 'date' o 'title'
+                allData.sort((a, b) => a.title.localeCompare(b.title));
+
+                renderCards(allData);
+            } catch (error) {
+                console.error("Error cargando datos:", error);
+                document.getElementById('gallery').innerHTML = "Error al cargar los datos.";
+            }
+        }
+
+        function renderCards(data) {
+            const container = document.getElementById('gallery');
+            container.innerHTML = '';
+
+            data.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700';
+                
+                // Lógica de imagen: El script de Python ya debe haber decidido 
+                // si poner la ruta de local /img/covers o la URL externa.
+                card.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" class="poster w-full bg-slate-900" loading="lazy">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold truncate" title="${item.title}">${item.title}</h3>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-[10px] uppercase px-2 py-1 bg-slate-900 rounded text-gray-400 border border-slate-700">
+                                ${item.type}
+                            </span>
+                            <span class="text-yellow-500 text-xs italic">
+                                ${item.score ? '★ ' + item.score : ''}
+                            </span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function filterItems(type) {
+            if (type === 'all') {
+                renderCards(allData);
+            } else {
+                const filtered = allData.filter(item => item.type === type);
+                renderCards(filtered);
+            }
+        }
+
+        window.onload = loadData;
+    </script>
+</body>
+</html>
