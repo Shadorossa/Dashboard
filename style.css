@@ -1,6 +1,6 @@
-/* ==========================================================================
-   CONFIGURACIÓN CORE & VARIABLES
-   ========================================================================== */
+/* =========================================
+   1. IMPORTACIONES Y VARIABLES (ROOT)
+   ========================================= */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
@@ -10,29 +10,12 @@
     --text-main: #e5e5e5;
     --text-dim: #555;
     --gold: #ffcc00;
-    --silver: #b0b0b0;
-    --bronze: #cd7f32;
     --round: 8px;
-    --transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* ESCALADO RESPONSIVO */
-html {
-    font-size: 15px;
-}
-
-@media (max-width: 1600px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 1200px) {
-    html {
-        font-size: 13px;
-    }
-}
-
+/* =========================================
+   2. RESET Y BASES
+   ========================================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,12 +23,13 @@ html {
 }
 
 body {
-    background-color: var(--bg);
+    background: var(--bg);
     color: var(--text-main);
     font-family: 'Space Grotesk', sans-serif;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
@@ -54,11 +38,11 @@ body {
     padding: 2rem 1.5rem;
 }
 
-/* ANIMACIÓN DE ENTRADA */
+/* --- ANIMACIONES --- */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(15px);
+        transform: translateY(20px);
     }
 
     100% {
@@ -67,43 +51,93 @@ body {
     }
 }
 
+@keyframes coverFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .animate-in {
     animation: fadeInUp 0.5s cubic-bezier(0.2, 1, 0.3, 1) both;
 }
 
-/* ==========================================================================
-   HEADER & PERFIL
-   ========================================================================== */
+/* Aplicación de animación secuencial desde JS */
+.grid-fade-in .item-card,
+.fav-grid .item-card {
+    opacity: 0;
+    animation: coverFadeIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* =========================================
+   3. HEADER / PERFIL
+   ========================================= */
 .profile-box {
-    display: flex;
-    background: var(--card-bg);
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #111;
     border: 1px solid var(--border);
-    border-radius: var(--round);
-    margin-bottom: 3rem;
+    border-radius: 12px;
     overflow: hidden;
-    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.banner-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(13, 13, 13, 1) 0%, rgba(13, 13, 13, 0.9) 25%, rgba(13, 13, 13, 0) 100%);
+    z-index: 2;
+}
+
+.profile-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 2rem;
 }
 
 .avatar-sq {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-right: 1px solid var(--border);
+    border-radius: var(--round);
+    border: 2px solid var(--border);
 }
 
-.profile-info {
-    padding: 1.5rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.profile-tag {
+    color: var(--gold);
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    font-family: 'JetBrains Mono';
 }
 
 .profile-info h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    letter-spacing: -1.5px;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
 }
 
 .stats-container {
@@ -112,19 +146,19 @@ body {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.8rem;
     color: var(--text-dim);
+    margin-top: 0.5rem;
 }
 
 .stat-item i {
     color: var(--gold);
-    margin-right: 6px;
+    margin-right: 5px;
 }
 
-/* ==========================================================================
-   CONTROLES (BUSCADOR & FILTROS)
-   ========================================================================== */
+/* =========================================
+   4. CONTROLES Y FILTROS
+   ========================================= */
 .controls-row {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     gap: 1.2rem;
     background: var(--card-bg);
@@ -134,34 +168,20 @@ body {
     margin-bottom: 2rem;
 }
 
-.search-wrapper {
-    position: relative;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-}
-
 .search-input {
     width: 100%;
-    background: #080808;
+    background: #000 !important;
     border: 1px solid #222;
     color: #fff;
-    padding: 0.7rem 1rem 0.7rem 2.8rem;
-    font-family: inherit;
-    font-size: 0.85rem;
+    padding: 0.8rem 1rem 0.8rem 3rem !important;
     border-radius: 6px;
     outline: none;
+    font-family: inherit;
+    transition: border-color 0.3s;
 }
 
-.search-wrapper i {
-    position: absolute;
-    left: 1.2rem;
-    color: var(--text-dim);
-}
-
-.filter-nav {
-    display: flex;
-    gap: 0.8rem;
+.search-input:focus {
+    border-color: var(--gold);
 }
 
 .filter-btn {
@@ -170,9 +190,6 @@ body {
     color: var(--text-dim);
     width: 2.5rem;
     height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     border-radius: 6px;
     transition: 0.3s;
@@ -182,50 +199,50 @@ body {
 .filter-btn:hover {
     color: var(--gold);
     border-color: var(--gold);
-    background: #111;
 }
 
 .sort-group {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
+    padding-left: 15px;
+    border-left: 1px solid var(--border);
 }
 
 .sort-select {
     background: #080808;
-    color: #fff;
     border: 1px solid var(--border);
-    padding: 0.6rem 1rem;
+    color: var(--text-dim);
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    border-radius: 6px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
     cursor: pointer;
+    text-transform: uppercase;
     outline: none;
-    appearance: none;
 }
 
 .dir-btn {
     background: #080808;
     border: 1px solid var(--border);
-    color: #fff;
-    width: 2.5rem;
-    height: 2.5rem;
+    color: var(--gold);
+    width: 2.2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    border-radius: 4px;
 }
 
-/* ==========================================================================
-   GRIDS Y TARJETAS (CARDS)
-   ========================================================================== */
+/* =========================================
+   5. GRIDS Y TARJETAS (CORRECCIÓN Z-INDEX)
+   ========================================= */
 .fav-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .general-grid {
@@ -239,185 +256,137 @@ body {
     background: #000;
     border: 1px solid var(--border);
     border-radius: var(--round);
-    transition: var(--transition);
-    display: block;
-    text-decoration: none;
-    /* CAMBIO CLAVE: Cambiado de hidden a visible para mostrar el popover */
-    overflow: visible;
-    opacity: 0;
-    will-change: transform, opacity;
     z-index: 1;
 }
 
-/* Elevamos la tarjeta en hover o cuando el popover está activo para que no quede detrás de otras */
-.item-card:hover,
-.item-card:has(.rating-popover.active) {
+/* Elevación normal al pasar el cursor */
+.item-card:hover {
     z-index: 100;
 }
 
-.item-card.fav-card {
-    aspect-ratio: 1 / 2.4;
+/* PRIORIDAD MÁXIMA si el selector de nota está abierto */
+.item-card:has(.quick-score-picker.active) {
+    z-index: 9999 !important;
 }
 
 .item-card.tile {
     aspect-ratio: 2 / 3;
 }
 
-.item-card img {
+.item-card.fav-card {
+    aspect-ratio: 2 / 3.2;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--round);
+    overflow: hidden;
+    background: #111;
+    z-index: 2;
+}
+
+.main-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0.85;
-    border-radius: var(--round);
-    transition: var(--transition);
-    /* Aseguramos que la imagen no se salga si no hay overflow hidden */
-    display: block;
+    transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.item-card:hover img {
-    opacity: 0.15;
-    filter: blur(6px);
+.item-card:hover .main-img {
+    opacity: 0.15 !important;
+    filter: blur(8px);
     transform: scale(1.05);
 }
 
-/* LINK INTERNO */
-.card-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    z-index: 5;
-}
-
-/* ==========================================================================
-   SISTEMA DE NOTAS & SELECTOR
-   ========================================================================== */
-
-/* HEXÁGONO NOTA */
+/* =========================================
+   6. SELECTOR DE NOTA Y HEXÁGONO
+   ========================================= */
 .score-hexagon {
     position: absolute;
-    top: -10px;
+    top: -12px;
     left: 50%;
     transform: translateX(-50%);
     width: 2.2rem;
     height: 2.5rem;
     background: #111;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 100;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
-    z-index: 50;
     cursor: pointer;
-    pointer-events: auto;
-    transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: 0.3s;
+    border: 1px solid transparent;
 }
 
-.item-card:hover .score-hexagon {
-    top: -12px;
+.score-hexagon:hover {
     background: var(--gold);
-    border-color: var(--gold);
-    filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.6));
+}
+
+.score-hexagon:hover .score-val {
+    color: #000;
 }
 
 .score-val {
     color: var(--gold);
     font-weight: 700;
-    font-size: 0.85rem;
-    font-family: 'JetBrains Mono', monospace;
-    line-height: 1;
+    font-family: 'JetBrains Mono';
+    font-size: 0.9rem;
 }
 
-.item-card:hover .score-val {
-    color: #000;
-}
-
-/* BARRA DE SELECCIÓN HORIZONTAL (POPOVER) */
-.rating-popover {
+.quick-score-picker {
     position: absolute;
-    top: -55px;
+    top: -45px;
     left: 50%;
-    transform: translateX(-50%) translateY(10px);
+    transform: translateX(-50%) scale(0.9);
     background: rgba(10, 10, 10, 0.98);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--border);
-    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--gold);
+    border-radius: 6px;
     display: flex;
-    gap: 2px;
-    padding: 6px 10px;
-    z-index: 200;
-    /* Por encima de todo */
+    padding: 4px;
+    z-index: 1001;
+    /* Dentro de la tarjeta activa */
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.9);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.rating-popover.active {
+.quick-score-picker.active {
     opacity: 1;
-    pointer-events: auto;
-    transform: translateX(-50%) translateY(0);
+    pointer-events: all;
+    top: -60px;
+    transform: translateX(-50%) scale(1);
 }
 
-.btn-rate {
-    background: transparent;
-    border: none;
-    color: var(--text-dim);
+.score-btn {
+    color: #fff;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    width: 28px;
-    height: 28px;
+    font-size: 0.7rem;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-radius: 50%;
-    transition: 0.2s;
 }
 
-.btn-rate:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-}
-
-.btn-rate.current {
+.score-btn:hover {
     background: var(--gold);
     color: #000;
-    font-weight: 700;
 }
 
-.btn-reset {
-    border-left: 1px solid var(--border);
-    margin-left: 4px;
-    padding-left: 8px;
-    color: #ff4444;
+.reset-btn {
+    color: #ff4444 !important;
+    border-right: 1px solid var(--border);
 }
 
-/* ==========================================================================
-   FECHA Y TÍTULOS
-   ========================================================================== */
-.finish-date {
-    position: absolute;
-    bottom: 12px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    color: #f0f0f0;
-    opacity: 0.3;
-    white-space: nowrap;
-    letter-spacing: 1px;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 10;
-}
-
-.item-card:hover .finish-date {
-    opacity: 0.99;
-}
-
+/* =========================================
+   7. TEXTOS Y DIVISORES
+   ========================================= */
 .title-container {
     position: absolute;
     top: 50%;
@@ -425,12 +394,10 @@ body {
     transform: translate(-50%, -40%);
     width: 90%;
     text-align: center;
-    z-index: 10;
     opacity: 0;
-    transition: var(--transition);
+    transition: 0.4s ease-out;
+    z-index: 15;
     pointer-events: none;
-    word-break: keep-all;
-    overflow-wrap: break-word;
 }
 
 .item-card:hover .title-container {
@@ -442,76 +409,16 @@ body {
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
-    line-height: 1.2;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 1);
-}
-
-.sub-title {
     display: block;
-    font-size: 0.65rem;
+    line-height: 1.2;
+}
+
+.api-sub {
+    font-size: 0.6rem;
     color: var(--gold);
+    font-family: 'JetBrains Mono';
+    display: block;
     margin-top: 5px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-/* ==========================================================================
-   ESTÉTICA FAVORITOS
-   ========================================================================== */
-@keyframes internalSweep {
-    from {
-        transform: translateX(-150%) skewX(-25deg);
-    }
-
-    to {
-        transform: translateX(150%) skewX(-25deg);
-    }
-}
-
-.light-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
-    transform: translateX(-150%) skewX(-25deg);
-    pointer-events: none;
-    z-index: 5;
-}
-
-.fav-card:hover .light-mask {
-    animation: internalSweep 0.8s ease-in-out;
-}
-
-.rank-tag {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 4px;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid var(--border);
-}
-
-.fav-card:nth-child(1) .rank-tag {
-    border-color: var(--gold);
-    color: var(--gold);
-}
-
-.fav-card:nth-child(2) .rank-tag {
-    border-color: var(--silver);
-    color: var(--silver);
-}
-
-.fav-card:nth-child(3) .rank-tag {
-    border-color: var(--bronze);
-    color: var(--bronze);
 }
 
 .category-divider {
@@ -533,4 +440,10 @@ body {
     height: 1px;
     background: var(--border);
     flex-grow: 1;
+}
+
+.card-link {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
 }

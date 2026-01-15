@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel // Shadorossa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .admin-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--gold);
+            font-family: 'JetBrains Mono';
+            font-size: 0.8rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            background: #000;
+            border: 1px solid var(--border);
+            color: #fff;
+            padding: 0.8rem;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        .btn-save {
+            background: var(--gold);
+            color: #000;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 700;
+            width: 100%;
+            transition: 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn-save:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        .back-link:hover {
+            color: var(--gold);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> VOLVER AL ARCHIVO</a>
+
+        <div class="admin-container animate-in">
+            <h1 style="margin-bottom: 2rem; text-transform: uppercase; letter-spacing: -1px;">Añadir Entrada</h1>
+
+            <div class="input-group">
+                <label>TIPO DE OBRA</label>
+                <select id="item-type">
+                    <option value="game">VIDEOJUEGO</option>
+                    <option value="anime">ANIME</option>
+                    <option value="manga">MANGA</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>TÍTULO</label>
+                <input type="text" id="item-title" placeholder="Ej: Yakuza 0">
+            </div>
+
+            <div class="input-group">
+                <label>URL DE IMAGEN (API/EXTERNA)</label>
+                <input type="text" id="item-image" placeholder="https://...">
+            </div>
+
+            <div class="input-group">
+                <label>SCORE (1-10)</label>
+                <input type="number" id="item-score" step="0.5" min="0" max="10" placeholder="8.5">
+            </div>
+
+            <div class="input-group">
+                <label>FORMATO / SUBTÍTULO (OPCIONAL)</label>
+                <input type="text" id="item-format" placeholder="Ej: Movie, TV, PC...">
+            </div>
+
+            <button class="btn-save" onclick="saveEntry()">GUARDAR ENTRADA</button>
+            <p id="status-msg"
+                style="margin-top: 1rem; text-align: center; font-size: 0.8rem; font-family: 'JetBrains Mono';"></p>
+        </div>
+    </div>
+
+    <script>
+        async function saveEntry() {
+            const data = {
+                type: document.getElementById('item-type').value,
+                title: document.getElementById('item-title').value,
+                image: document.getElementById('item-image').value,
+                score: document.getElementById('item-score').value,
+                format: document.getElementById('item-format').value,
+                finishDate: new Date().toISOString().split('T')[0]
+            };
+
+            if (!data.title) return alert("El título es obligatorio");
+
+            const msg = document.getElementById('status-msg');
+            msg.innerText = "PROCESANDO...";
+
+            try {
+                // Intento de guardado vía API (requiere el servidor node activo)
+                const response = await fetch('/api/add-entry', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    msg.style.color = "var(--gold)";
+                    msg.innerText = "¡ENTRADA GUARDADA CON ÉXITO!";
+                    document.getElementById('item-title').value = "";
+                } else {
+                    throw new Error();
+                }
+            } catch (e) {
+                msg.style.color = "#ff4444";
+                msg.innerText = "ERROR: EL SERVIDOR NO ESTÁ RESPONDIENDO. Los archivos JSON no se pueden editar sin un servidor activo.";
+            }
+        }
+    </script>
+</body>
+
+</html>
